@@ -1,8 +1,9 @@
 <?php wp_footer();?>
-<?php include('/style.css');?>
+</div>
+
 
 <footer>
-  <div>
+  <div class="container">
     <p class="u-text-1">Intuitive Soul</p>
     <p class="u-text-2">Join Us.</p>
     <div class="u-form">
