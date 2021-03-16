@@ -8,6 +8,9 @@ function load_stylesheets(){
   wp_register_style('style', get_template_directory_uri() . '/style.css', array(), false, 'all');
   wp_enqueue_style('style');
 
+  wp_register_style('icons', get_template_directory_uri() . '/node_modules/@fortawesome/fontawesome-free/css/all.css', array(), false, 'all');
+  wp_enqueue_style('icons');
+
 }
 
 add_action('wp_enqueue_scripts', 'load_stylesheets');
