@@ -62,4 +62,11 @@ add_theme_support('post-thumbnails');
 add_image_size('smallest', 300, 300, true);
 add_image_size('largest', 800, 800, true);
 
+function cn_include_content($pid) {
+  $contact = get_post($pid);
+  $content = $contact->post_content;
+  $content = apply_filters('the_content', $content);
+  echo $content;
+}
+
 ?>
