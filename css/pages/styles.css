@@ -98,4 +98,42 @@ header nav .nav-button div {
   }
 }
 
+.page {
+  background-color: white;
+}
+.page h1 {
+  text-align: center;
+}
+.page .icons {
+  text-align: center;
+  margin: 0.5em auto;
+}
+.page .icons .icon {
+  margin: 0.125em;
+  padding: 0.125em;
+  color: black;
+}
+.page .icons .icon:hover {
+  color: orange;
+}
+.page .is-form {
+  margin: 1em auto;
+  width: 40%;
+}
+@media only screen and (max-width: 1200.98px) {
+  .page .is-form {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  .page .is-form {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .page .is-form {
+    width: 80%;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

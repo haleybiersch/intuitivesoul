@@ -1,0 +1,43 @@
+// By Charlotte
+@use 'variables';
+.page {
+ background-color: white;
+ h1 {
+  text-align: center;
+ }
+ .icons {
+  text-align: center;
+  margin: 0.5em auto;
+
+   .icon{
+      margin: 0.125em;
+      padding: 0.125em;
+      color: variables.$icons;
+   &:hover {
+    color: variables.$icons-hover;
+   }
+   }
+ }
+ .is-form {
+  margin: 1em auto;
+   width: 40%;
+
+ }
+ @media only screen and (max-width: 1200.98px) {
+  .is-form {
+   width: 50%;
+  }
+ }
+
+ @media only screen and (max-width: 991.98px) {
+  .is-form {
+   width: 60%;
+  }
+ }
+
+ @media only screen and (max-width: 767.98px) {
+  .is-form {
+   width: 80%;
+  }
+ }
+ }
