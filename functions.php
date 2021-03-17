@@ -58,9 +58,9 @@ register_nav_menus(
 );
 
 add_theme_support('post-thumbnails');
-
 add_image_size('smallest', 300, 300, true);
 add_image_size('largest', 800, 800, true);
+
 
 function cn_include_content($pid) {
   $contact = get_post($pid);
@@ -69,4 +69,19 @@ function cn_include_content($pid) {
   echo $content;
 }
 
-?>
+
+// show all featured posts
+$featured_posts = new WP_Query(array(
+    'category_name' => 'featured',
+    'post_status' => 'publish',
+    'posts_per_page' => 3,
+));
+
+// show all blog posts
+$all_posts = new WP_Query(array(
+    'category_name' => 'blog',
+    'post_status' => 'publish',
+    'posts_per_page' => 6,
+));
+
+

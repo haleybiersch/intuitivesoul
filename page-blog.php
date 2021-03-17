@@ -1,0 +1,57 @@
+<?php /* Template Name: Blog */ ?>
+<?php get_header();?>
+<div class="container blog-page">
+    <div class="row">
+        <div class="col-12"><h1>Intuitive Soul Blog</h1></div>
+    </div>
+    <div class="row">
+        <div class="col-12"><h2>Featured Posts</h2></div>
+    </div>
+    <div class="row featured-posts">
+        <?php if ($featured_posts->have_posts()) : ?>
+            <?php while ($featured_posts->have_posts()) : $featured_posts->the_post(); ?>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="preview">
+                        <?php if(has_post_thumbnail()): ?>
+                            <a href="<?php the_permalink(); ?>" class="thumbnail"><?php the_post_thumbnail('largest'); ?></a>
+                        <?php endif; ?>
+                        <div class="text-center">
+                            <h3><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3>
+                            <p><?php the_excerpt(); ?></p>
+                            <a href="<?php the_permalink(); ?>" class="more btn btn-primary">Continue Reading</a>
+                        </div>
+                    </div>
+                </div>
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+        <?php else : ?>
+            <p><?php __('No News'); ?></p>
+        <?php endif; ?>
+    </div>
+    <div class="row">
+        <div class="col-12"><h2>Latest Posts</h2></div>
+    </div>
+    <div class="row all-posts">
+        <?php if ($all_posts->have_posts()) : ?>
+        <?php while ($all_posts->have_posts()) : $all_posts->the_post(); ?>
+        <div class="col-sm-6 col-lg-4">
+            <div class="preview">
+                <?php if(has_post_thumbnail()): ?>
+                    <a href="<?php the_permalink(); ?>" class="thumbnail"><?php the_post_thumbnail('blog'); ?></a>
+                <?php endif; ?>
+                <div class="text-center">
+                    <h3><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3>
+                    <p><?php the_excerpt(); ?></p>
+                    <a href="<?php the_permalink(); ?>" class="more btn btn-primary">Continue Reading</a>
+                </div>
+
+            </div>
+        </div>
+    <?php endwhile; ?>
+    <?php wp_reset_postdata(); ?>
+<?php else : ?>
+    <p><?php __('No News'); ?></p>
+<?php endif; ?>
+    </div>
+</div>
+<?php get_footer();

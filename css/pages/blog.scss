@@ -1,0 +1,19 @@
+// By Charlotte
+@use 'variables';
+.blog-page {
+    a {
+      color: variables.$color;
+      text-decoration: none;
+    }
+  h2 {
+    text-align: center;
+  }
+  .thumbnail {
+    display: block;
+    img {
+      width: 100%;
+      height: auto;
+
+    }
+  }
+}
