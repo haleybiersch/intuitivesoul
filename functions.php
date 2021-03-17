@@ -11,6 +11,9 @@ function load_stylesheets(){
   wp_register_style('icons', get_template_directory_uri() . '/node_modules/@fortawesome/fontawesome-free/css/all.css', array(), false, 'all');
   wp_enqueue_style('icons');
 
+  wp_register_style('sass', get_template_directory_uri() . '/css/pages/styles.css', array(), false, 'all');
+  wp_enqueue_style('sass');
+
 }
 
 add_action('wp_enqueue_scripts', 'load_stylesheets');
@@ -32,6 +35,15 @@ function include_jquery(){
 }
 
 add_action('wp_enqueue_scripts', 'include_jquery');
+
+function header_js(){
+
+  wp_deregister_script('jquery');
+  wp_enqueue_script('jquery', get_template_directory_uri() . '/js/header.js', '', 1, true);
+
+}
+
+add_action('wp_enqueue_scripts', 'header_js');
 
 add_theme_support('menus');
 

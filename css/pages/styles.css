@@ -1,0 +1,101 @@
+body {
+  position: relative;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+header nav {
+  padding-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+}
+header nav a {
+  text-decoration: none;
+}
+header nav .logo {
+  flex: 30%;
+}
+header nav .nav-button {
+  display: none;
+  cursor: pointer;
+}
+header nav .navigation {
+  flex: 70%;
+  list-style-type: none;
+  padding: 0;
+  z-index: 99;
+}
+header nav .navigation li {
+  display: inline;
+  padding: 0.25em;
+}
+header nav .navigation li a {
+  width: 100%;
+  padding: 0.25em;
+}
+header nav .nav-button {
+  display: none;
+  cursor: pointer;
+}
+header nav .nav-button div {
+  z-index: 1000;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  transition: all 0.3s ease;
+  background-color: black;
+}
+@media only screen and (max-width: 991.98px) {
+  header nav .nav-button {
+    display: block;
+    z-index: 1000;
+  }
+  header nav .navigation {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    background-color: white;
+    text-align: center;
+  }
+  header nav .navigation li {
+    padding: 1em 0;
+  }
+  header nav .navigation li a {
+    display: block;
+    padding: 0.5em;
+  }
+  header nav .nav-active {
+    width: 50%;
+    transform: translate(0%);
+  }
+  header nav .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  header nav .toggle .line2 {
+    opacity: 0;
+  }
+  header nav .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

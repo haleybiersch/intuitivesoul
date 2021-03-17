@@ -10,20 +10,23 @@
 <body <?php body_class();?>>
 
 
-  <header class="sticky-top">
+  <header >
 <div class="container">
-    <h4>Logo</h4>
     <nav>
-    <?php wp_nav_menu(
+        <h4 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h4>
+        <div class="nav-button">
+            <p class="d-none">Mobile Nav Button</p>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <?php wp_nav_menu (
+            array(
+                'theme_location' => 'top-menu',
+                'menu_class' => 'navigation'
+            )
 
-
-      array(
-
-        'theme_location' => 'top-menu',
-        'menu-class' => 'navigation'
-      )
-
-    );?>
+        ); ?>
 
     </nav>
   </div>
