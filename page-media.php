@@ -15,34 +15,6 @@ if (! defined('ABSPATH')) {
 
 <div class="container media-page pb-5">
 	<h1><?php the_title();?></h1>
-    <h2 class="text-center">Featured Shows</h2>
-    <div class="featured">
-        <div class="row">
-            <?php if ($archives->have_posts()) : ?>
-                <?php while ($archives->have_posts()) : $archives->the_post(); ?>
-                    <div class="col-md-6 col-lg-4">
-                                <div class="card archives">
-                                    <div class="card-body">
-                                    <h3 class="card-title"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3><hr>
-                                    <p><?php the_excerpt(); ?></p>
-                                        <div class="button">
-                                        <a class="btn btn-primary" href="<?php the_permalink(); ?>">Listen Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                <?php endwhile; ?>
-                <?php wp_reset_postdata(); ?>
-            <?php else : ?>
-                <p><?php __('No News'); ?></p>
-            <?php endif; ?>
-
-    </div>
-        <div class="button">
-            <a class="btn btn-primary" href="<?php get_bloginfo('intuitivesoul/') ?>/category/blog/">See More</a>
-        </div>
-    </div>
-
  <div class="container-fluid">
 		<?php if (have_posts()) {
 	while(have_posts()) {
@@ -51,47 +23,47 @@ if (! defined('ABSPATH')) {
 	}
 }
 ?>
-   <!--
+
 <div id="container-fluid">
 <h2>Featured Shows</h2>
 <div class="row">
+
 <table class="table table-striped table-dark">
   <thead>
     <tr>
       <th scope="col"></th>
-      <th scope="col">Author</th>
-      <th scope="col">Description</th>
-      <th scope="col">Audio Track</th>
+      <th scope="col">Guest</th>
+        <th scope="col">Description</th>
+        <th scope="col">Audio Track</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
+  <?php if ($archives->have_posts()) : ?>
+      <?php while ($archives->have_posts()) : $archives->the_post(); ?>
+          <?php if (empty($counter)){
+              $counter = 1;
+          }else{
+              $counter++;
+          } ?>
+
+        <td scope="row"><?php echo $counter; ?></td>
+
       <td class="author">Thomas Campbell</td>
-      <td class="show">March 2021 - <em><strong>Perceptions</strong></em></td>
+        <td class="show"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></td>
       <td><audio class="embed-responsive-item" controls="" preload="none">
  		 <source src="../wp-content/uploads/thomascampbell/2020/NFTHtomperceptionsNY2021.mp3" type="audio/mpeg">
  		</audio></</td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td class="author">Thomas Campbell</td>
-      <td class="show">2021 February - Love Foundations</td>
-      <td><audio class="embed-responsive-item" controls="" preload="none">
- 		 <source src="../wp-content/uploads/thomascampbell/2021/NFTHtomlovefoundations21.mp3" type="audio/mpeg">
- 		</audio></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td class="author">Thomas Campbell</td>
-      <td class="show">2021 January - Moving Forward</td>
-      <td><audio class="embed-responsive-item" controls="" preload="none">
- 		 <source src="../wp-content/uploads/thomascampbell/2021/NFTHtommovingforward0221.mp3" type="audio/mpeg">
- 		</audio></td>
-    </tr>
+    <?php endwhile; ?>
+    <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+        <p><?php __('No News'); ?></p>
+    <?php endif; ?>
+
   </tbody>
 </table>
-</div>	<br> -->
+
+</div>	<br>
 	<div class="row"><div class="col-12"><h2>News for the Heart</h2></div><br>
 	</div><br>
 	<div class="row news-heart">

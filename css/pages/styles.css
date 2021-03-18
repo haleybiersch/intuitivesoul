@@ -43,8 +43,9 @@
 .media-page h3 a:hover, .media-page h2 a:hover {
   color: #DA8954;
 }
-.media-page .archives {
-  margin: 1em auto;
+.media-page td a {
+  color: white;
+  text-decoration: none;
 }
 .media-page img {
   width: 100%;
