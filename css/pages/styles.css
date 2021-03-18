@@ -27,6 +27,18 @@
   width: 150px;
 }
 
+.media-page img {
+  width: 100%;
+  height: auto;
+}
+.media-page img.portrait {
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+}
+.media-page .logos img {
+  padding: 0.25em;
+}
+
 .btn-primary {
   background-color: #DA8954;
   border-color: #DA8954;

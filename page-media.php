@@ -13,15 +13,9 @@ if (! defined('ABSPATH')) {
 
 
 
-<div class="container pt-5 pb-5">
-	
-	
-	
-	<h2><?php the_title();?></h2>
-	<br>
-	<br>
+<div class="container media-page pt-5 pb-5">
+	<h1><?php the_title();?></h1>
 
-			
  <div class="container-fluid">
 		<?php if (have_posts()) {
 	while(have_posts()) {
@@ -70,27 +64,30 @@ if (! defined('ABSPATH')) {
   </tbody>
 </table>
 </div>	<br>
-	<div class="row"><div class="col-12"><h2>NEWS FOR THE HEART</h2></div><br>
+	<div class="row"><div class="col-12"><h2>News for the Heart</h2></div><br>
 	</div><br>
 	<div class="row">
-		<div class="col-3">
-			<img src="../wp-content/uploads/laurie.jpg" alt="" width="200" height="150"/>
+		<div class="col-lg-2 col-md-3">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/laurie.jpg" alt="Portrait of Laurie" class="portrait"/>
 		</div>
-		<div class="col-9">
+		<div class="col-lg-10 col-md-9">
 		<p><strong>News for the Heart</strong> is dedicated to helping you give a voice to your own Soul. Our hearts have the power to free us from pain and the struggle that keep us from awakening to our true essence. Join us as we delve into our Heart and Soul to find the path that will open us to the possibilities and lead us to the life we will LOVE to live. Join Laurie as she discusses all types of relationships, contemplating our connections whether they are intimate, friends, family or work. How our relationships impact our business, careers opportunities and/or starting a business. We will explore all areas of Relationships, for this is the quickest way to grow our consciousness.
 			News for the Heart is my Newest Show.  I have been a radio host for over 10 years now. Check out my audio shows!!</p><br>
 		</div></div>
 		<div class="row">
 			<div class="col-12">
 			<h3>Different Places to Listen</h3></div></div><br>
-		<div class="row">
-		<div class="col-2"><img src="../wp-content/uploads/blogtalkradio.jpg" alt+""/></div>
-		<div class="col-2"><img src="../wp-content/uploads/iheart.jpg" alt+"" width="150"/></div>
-		<div class="col-2"><img src="../wp-content/uploads/bemajor.jpg" alt+""/></div>
-		<div class="col-2"><img src="../wp-content/uploads/apple.jpg" alt+""/></div>
-		<div class="col-2"><img src="../wp-content/uploads/spreaker.jpg" alt+""/></div>
-		<div class="col-2"><img src="../wp-content/uploads/stitcher.jpg" alt+""/></div>
+		<div class="row logos">
+		<div class="col-lg-2 col-md-4 col-sm-6"><img src="<?php echo get_template_directory_uri(); ?>/images/blog-talk-radio.png" alt="Blog Talk Radio Logo"/></div>
+		<div class="col-lg-2 col-md-4 col-sm-6"><img src="<?php echo get_template_directory_uri(); ?>/images/i-heart-radio.jpg" alt="I heart radio logo" /></div>
+		<div class="col-lg-2 col-md-4 col-sm-6"><img src="<?php echo get_template_directory_uri(); ?>/images/be-major.jpg" alt="Be Major Logo"/></div>
+		<div class="col-lg-2 col-md-4 col-sm-6"><img src="<?php echo get_template_directory_uri(); ?>/images/apple-podcasts.jpg" alt="Apple Podcasts Logo"/></div>
+		<div class="col-lg-2 col-md-4 col-sm-6"><img src="<?php echo get_template_directory_uri(); ?>/images/spreaker.png" alt="Spreaker Logo"/></div>
+		<div class="col-lg-2 col-md-4 col-sm-6"><img src="<?php echo get_template_directory_uri(); ?>/images/stitcher.png" alt="Stitcher Logo"/></div>
 		</div>
+</div>
+ </div>
+</div>
 
 
 <?php get_footer();?>
