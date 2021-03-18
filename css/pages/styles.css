@@ -119,6 +119,14 @@ header nav .nav-button div {
   }
 }
 
+body {
+  background-color: white;
+}
+
+a:hover {
+  color: #DA8954;
+}
+
 .page {
   background-color: white;
 }
@@ -135,7 +143,7 @@ header nav .nav-button div {
   color: black;
 }
 .page .icons .icon:hover {
-  color: orange;
+  color: #DA8954;
 }
 .page .is-form {
   margin: 1em auto;
@@ -162,7 +170,13 @@ header nav .nav-button div {
   text-decoration: none;
 }
 .blog-page h2 {
+  margin-bottom: 0.5em;
+}
+.blog-page h2, .blog-page h3 {
   text-align: center;
+}
+.blog-page .preview {
+  margin-bottom: 2em;
 }
 .blog-page .thumbnail {
   display: block;
@@ -170,6 +184,21 @@ header nav .nav-button div {
 .blog-page .thumbnail img {
   width: 100%;
   height: auto;
+  max-height: 220px;
+  margin-bottom: 1em;
+}
+.blog-page p {
+  margin-bottom: 0;
+}
+.blog-page .btn-primary {
+  background-color: #DA8954;
+  border-color: #DA8954;
+  color: white;
+}
+
+.blog-post a {
+  color: #DA8954;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

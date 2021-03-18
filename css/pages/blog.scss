@@ -6,14 +6,39 @@
       text-decoration: none;
     }
   h2 {
+    margin-bottom: 0.5em;
+  }
+  h2, h3 {
     text-align: center;
+  }
+
+  .preview {
+    margin-bottom: 2em;
   }
   .thumbnail {
     display: block;
+
     img {
       width: 100%;
       height: auto;
-
+      max-height:220px ;
+      margin-bottom: 1em;
     }
+  }
+  p {
+    margin-bottom: 0;
+  }
+
+  .btn-primary {
+    background-color: variables.$button;
+    border-color: variables.$button;
+    color: white;
+  }
+}
+
+.blog-post {
+  a {
+    color: variables.$orange;
+    text-decoration: none;
   }
 }

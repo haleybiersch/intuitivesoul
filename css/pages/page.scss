@@ -1,5 +1,14 @@
 // By Charlotte
 @use 'variables';
+body {
+ background-color: white;
+}
+
+a {
+ &:hover {
+  color: variables.$orange;
+ }
+}
 .page {
  background-color: white;
  h1 {
@@ -12,10 +21,11 @@
    .icon{
       margin: 0.125em;
       padding: 0.125em;
-      color: variables.$icons;
-   &:hover {
-    color: variables.$icons-hover;
-   }
+      color: black;
+
+    &:hover {
+     color: variables.$orange;
+    }
    }
  }
  .is-form {
