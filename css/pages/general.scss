@@ -1,0 +1,16 @@
+@use 'variables';
+.btn-primary {
+  background-color: variables.$button;
+  border-color: variables.$button;
+  color: white;
+
+  &:hover {
+    background-color: variables.$button;
+    border-color: variables.$button;
+    color: white;
+  }
+}
+
+h3 {
+  font-size: 26px;
+}
