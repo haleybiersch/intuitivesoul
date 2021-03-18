@@ -2,7 +2,7 @@
 
     <div class="all-posts media-page">
         <div class="row">
-            <div class="col-12"><h1><?php the_title(); ?> <hr></h1></div>
+            <div class="col-12"><h1 class="text-center"><?php single_cat_title() ?> <hr></h1></div>
         </div>
         <div class="latest-stories">
             <div class="row">
