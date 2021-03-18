@@ -15,6 +15,25 @@ if (! defined('ABSPATH')) {
 
 <div class="container media-page pt-5 pb-5">
 	<h1><?php the_title();?></h1>
+    <h2 class="text-center">Featured Shows</h2>
+    <div class="featured">
+        <div class="row">
+            <?php if ($archives->have_posts()) : ?>
+                <?php while ($archives->have_posts()) : $archives->the_post(); ?>
+                    <div class="col-md-6 col-lg-4">
+                                <div class="text">
+                                    <h3 class="card-title"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3>
+                                    <p><?php the_excerpt(); ?></p>
+                                </div>
+                            </div>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
+            <?php else : ?>
+                <p><?php __('No News'); ?></p>
+            <?php endif; ?>
+
+    </div>
+    </div>
 
  <div class="container-fluid">
 		<?php if (have_posts()) {
@@ -23,7 +42,7 @@ if (! defined('ABSPATH')) {
 	the_content();
 	}
 }
-?> 
+?>
 <div id="container-fluid">
 <h2>Featured Shows</h2>
 <div class="row">

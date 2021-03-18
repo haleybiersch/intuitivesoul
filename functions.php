@@ -84,4 +84,11 @@ $all_posts = new WP_Query(array(
     'posts_per_page' => 6,
 ));
 
+// show radio/podcasts
+$archives = new WP_Query(array(
+    'category_name' => 'archives',
+    'post_status' => 'publish',
+    'posts_per_page' => 6,
+));
+
 
