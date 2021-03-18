@@ -13,7 +13,7 @@ if (! defined('ABSPATH')) {
 
 
 
-<div class="container media-page pt-5 pb-5">
+<div class="container media-page pb-5">
 	<h1><?php the_title();?></h1>
     <h2 class="text-center">Featured Shows</h2>
     <div class="featured">
@@ -21,9 +21,14 @@ if (! defined('ABSPATH')) {
             <?php if ($archives->have_posts()) : ?>
                 <?php while ($archives->have_posts()) : $archives->the_post(); ?>
                     <div class="col-md-6 col-lg-4">
-                                <div class="text">
-                                    <h3 class="card-title"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3>
+                                <div class="card archives">
+                                    <div class="card-body">
+                                    <h3 class="card-title"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3><hr>
                                     <p><?php the_excerpt(); ?></p>
+                                        <div class="button">
+                                        <a class="btn btn-primary" href="<?php the_permalink(); ?>">Listen Now</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                 <?php endwhile; ?>
@@ -33,6 +38,9 @@ if (! defined('ABSPATH')) {
             <?php endif; ?>
 
     </div>
+        <div class="button">
+            <a class="btn btn-primary" href="<?php get_bloginfo('intuitivesoul/') ?>/category/blog/">See More</a>
+        </div>
     </div>
 
  <div class="container-fluid">
@@ -43,6 +51,7 @@ if (! defined('ABSPATH')) {
 	}
 }
 ?>
+   <!--
 <div id="container-fluid">
 <h2>Featured Shows</h2>
 <div class="row">
@@ -82,10 +91,10 @@ if (! defined('ABSPATH')) {
     </tr>
   </tbody>
 </table>
-</div>	<br>
+</div>	<br> -->
 	<div class="row"><div class="col-12"><h2>News for the Heart</h2></div><br>
 	</div><br>
-	<div class="row">
+	<div class="row news-heart">
 		<div class="col-lg-2 col-md-3">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/laurie.jpg" alt="Portrait of Laurie" class="portrait"/>
 		</div>
@@ -97,12 +106,12 @@ if (! defined('ABSPATH')) {
 			<div class="col-12">
 			<h3>Different Places to Listen</h3></div></div><br>
 		<div class="row logos">
-		<div class="col-lg-2 col-md-4 col-sm-6"><img src="<?php echo get_template_directory_uri(); ?>/images/blog-talk-radio.png" alt="Blog Talk Radio Logo"/></div>
-		<div class="col-lg-2 col-md-4 col-sm-6"><img src="<?php echo get_template_directory_uri(); ?>/images/i-heart-radio.jpg" alt="I heart radio logo" /></div>
-		<div class="col-lg-2 col-md-4 col-sm-6"><img src="<?php echo get_template_directory_uri(); ?>/images/be-major.jpg" alt="Be Major Logo"/></div>
-		<div class="col-lg-2 col-md-4 col-sm-6"><img src="<?php echo get_template_directory_uri(); ?>/images/apple-podcasts.jpg" alt="Apple Podcasts Logo"/></div>
-		<div class="col-lg-2 col-md-4 col-sm-6"><img src="<?php echo get_template_directory_uri(); ?>/images/spreaker.png" alt="Spreaker Logo"/></div>
-		<div class="col-lg-2 col-md-4 col-sm-6"><img src="<?php echo get_template_directory_uri(); ?>/images/stitcher.png" alt="Stitcher Logo"/></div>
+		<div class="col-lg-2 col-md-4 col-sm-6"><a href="https://www.blogtalkradio.com/bemajor" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/blog-talk-radio.png" alt="Blog Talk Radio Logo"/></a> </div>
+            <div class="col-lg-2 col-md-4 col-sm-6"><a href="https://www.iheart.com/podcast/53-news-for-the-heart-laurie-h-26606367/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/i-heart-radio.jpg" alt="I heart radio logo" /></a></div>
+		<div class="col-lg-2 col-md-4 col-sm-6"><a href="https://bemajor.org/series/news-for-the-heart/"><img src="<?php echo get_template_directory_uri(); ?>/images/be-major.jpg" alt="Be Major Logo"/></a></div>
+            <div class="col-lg-2 col-md-4 col-sm-6"><a href="https://podcasts.apple.com/zw/podcast/be-major/id968164566" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/apple-podcasts.jpg" alt="Apple Podcasts Logo"/></a></div>
+		<div class="col-lg-2 col-md-4 col-sm-6"><a href="https://www.spreaker.com/show/news-for-the-heart-laurie-huston_1" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/spreaker.png" alt="Spreaker Logo"/></a></div>
+            <div class="col-lg-2 col-md-4 col-sm-6"><a href="https://www.stitcher.com/show/bemajor-radio" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/stitcher.png" alt="Stitcher Logo"/></a></div>
 		</div>
 </div>
  </div>

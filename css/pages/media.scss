@@ -1,4 +1,27 @@
+@use 'variables';
 .media-page {
+  padding-top: 0;
+
+  .featured, .news-heart {
+    margin-bottom: 2em;
+  }
+
+  h3, h2 {
+    text-align: center;
+
+    a {
+      color: variables.$color;
+      text-decoration: none;
+
+      &:hover {
+        color: variables.$orange;
+      }
+    }
+  }
+
+  .archives {
+    margin: 1em auto;
+  }
   img {
     width: 100%;
     height: auto;
@@ -12,4 +35,14 @@
       padding: 0.25em;
     }
   }
+
+  .button {
+    text-align: center;
+    a {
+      width: 120px;
+    }
+  }
+
+
+
 }

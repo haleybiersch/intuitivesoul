@@ -2,7 +2,7 @@
 <?php get_header();?>
 <div class="container blog-page">
     <div class="row">
-        <div class="col-12"><h1>Intuitive Soul Blog</h1></div><hr>
+        <div class="col-12"><h1><?php the_title(); ?></h1></div><hr>
     </div>
     <div class="row">
         <div class="col-12"><h2>Featured Posts</h2></div>

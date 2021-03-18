@@ -27,6 +27,25 @@
   width: 150px;
 }
 
+.media-page {
+  padding-top: 0;
+}
+.media-page .featured, .media-page .news-heart {
+  margin-bottom: 2em;
+}
+.media-page h3, .media-page h2 {
+  text-align: center;
+}
+.media-page h3 a, .media-page h2 a {
+  color: black;
+  text-decoration: none;
+}
+.media-page h3 a:hover, .media-page h2 a:hover {
+  color: #DA8954;
+}
+.media-page .archives {
+  margin: 1em auto;
+}
 .media-page img {
   width: 100%;
   height: auto;
@@ -37,6 +56,12 @@
 }
 .media-page .logos img {
   padding: 0.25em;
+}
+.media-page .button {
+  text-align: center;
+}
+.media-page .button a {
+  width: 120px;
 }
 
 .btn-primary {
