@@ -327,7 +327,7 @@ a:hover {
   display: block;
   position: absolute;
   top: 0;
-  right: -20px;
+  right: 0px;
   outline: 0;
   line-height: 36px;
   text-align: center;
