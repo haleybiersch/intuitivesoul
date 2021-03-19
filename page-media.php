@@ -45,39 +45,35 @@ if (! defined('ABSPATH')) {
               $counter++;
           }
 
-          $args = array
-          (
-              'post_type' => 'attachment',
-              'post_mime_type' => 'audio',
-              'numberposts' => -1
-          );
-          $audiofiles = get_posts($args);
-
-          foreach ($audiofiles as $file) {
-              $url = wp_get_attachment_url($file->ID);
-             // echo $url .'<br>';// url
-
-              $attr = array(
-                  'src' => $url,
-                  'loop' => '',
-                  'autoplay' => '',
-                  'preload' => 'none'
-              );
-
-              for ($x = 0; $x = 10; $x++) {
-                  echo wp_audio_shortcode($attr[$x]);
-              }
-           //echo wp_audio_shortcode($attr);
-          }
-
           ?>
+<tr>
+    <?php
+    $args = array
+    (
+        'post_type' => 'attachment',
+        'post_mime_type' => 'audio',
+        'numberposts' => -1
+    );
+    $audiofiles = get_posts($args);
 
+    foreach ($audiofiles as $file) {
+        $url = wp_get_attachment_url($file->ID);
+        // echo $url .'<br>';// url
+
+        $attr = array(
+            'src' => $url,
+            'loop' => '',
+            'autoplay' => '',
+            'preload' => 'none'
+        );
+    }
+    ?>
         <td scope="row"><?php echo $counter; ?></td>
 
         <td class="show"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></td>
 
 
-      <td class="audio"><?php  ?></td>
+      <td class="audio"><?php echo wp_audio_shortcode($attr);?></td>
     </tr>
     <?php endwhile; ?>
     <?php wp_reset_postdata(); ?>
@@ -113,6 +109,4 @@ if (! defined('ABSPATH')) {
 </div>
  </div>
 </div>
-
-
 <?php get_footer();?>
