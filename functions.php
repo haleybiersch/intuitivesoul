@@ -101,4 +101,11 @@ $archives = new WP_Query(array(
     'posts_per_page' => '10',
 ));
 
+$services = new WP_Query(array(
+    'category_name' => 'services',
+    'post_status' => 'publish',
+    'posts_per_page' => '6',
+));
+
+
 

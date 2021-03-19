@@ -21,3 +21,14 @@ h3 {
 figure {
   text-align: center;
 }
+
+.thumbnail {
+  display: block;
+
+  img {
+    width: 100%;
+    height: auto;
+    max-height:220px ;
+    margin-bottom: 1em;
+  }
+}
