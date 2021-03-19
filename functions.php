@@ -88,7 +88,7 @@ $all_posts = new WP_Query(array(
 $archives = new WP_Query(array(
     'category_name' => 'archives',
     'post_status' => 'publish',
-    'posts_per_page' => 6,
+    'posts_per_page' => '10',
 ));
 
 

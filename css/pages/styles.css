@@ -80,6 +80,14 @@ h3 {
   font-size: 26px;
 }
 
+.archives {
+  margin: 1em auto;
+}
+
+figure {
+  text-align: center;
+}
+
 body {
   position: relative;
 }
