@@ -40,37 +40,37 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
                 <div class="card h-100">
-                  <img src="#" class="card-img-top" alt="#">
+                  <?php if(has_post_thumbnail()): ?>
+                      <a href="<?php the_permalink(); ?>" class="thumbnail"><?php the_post_thumbnail(); ?></a>
+                  <?php endif; ?>
                   <div class="card-body">
-                    <h5 class="card-title">Blog Title</h5>
-                    <p class="card-text">illum
-                      definitiones no quo, maluisset concludaturque et eum, altera fabulas
-                      ut quo. </p>
-                      <a href="#" class="btn btn-primary">Read More</a>
+                    <h5 class="card-title"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h5><hr>
+                    <p class="card-text"><?php the_excerpt(); ?></p>
+                      <div class="text-center"><a href="<?php the_permalink(); ?>" class="more btn btn-primary">Read More</a></div>
                   </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card h-100">
-                  <img src="#" class="card-img-top" alt="#">
+                  <?php if(has_post_thumbnail()): ?>
+                      <a href="<?php the_permalink(); ?>" class="thumbnail"><?php the_post_thumbnail(); ?></a>
+                  <?php endif; ?>
                   <div class="card-body">
-                    <h5 class="card-title">Blog Title</h5>
-                    <p class="card-text">illum
-                      definitiones no quo, maluisset concludaturque et eum, altera fabulas
-                      ut quo. </p>
-                      <a href="#" class="btn btn-primary">Read More</a>
+                    <h5 class="card-title"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h5><hr>
+                    <p class="card-text"><?php the_excerpt(); ?></p>
+                      <div class="text-center"><a href="<?php the_permalink(); ?>" class="more btn btn-primary">Read More</a></div>
                   </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card h-100">
-                  <img src="#" class="card-img-top" alt="#">
+                  <?php if(has_post_thumbnail()): ?>
+                      <a href="<?php the_permalink(); ?>" class="thumbnail"><?php the_post_thumbnail(); ?></a>
+                  <?php endif; ?>
                   <div class="card-body">
-                    <h5 class="card-title">Blog Title</h5>
-                    <p class="card-text">illum
-                      definitiones no quo, maluisset concludaturque et eum, altera fabulas
-                      ut quo. </p>
-                      <a href="#" class="btn btn-primary">Read More</a>
+                    <h5 class="card-title"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h5><hr>
+                    <p class="card-text"><?php the_excerpt(); ?></p>
+                      <div class="text-center"><a href="<?php the_permalink(); ?>" class="more btn btn-primary">Read More</a></div>
                   </div>
                 </div>
               </div>
@@ -82,37 +82,37 @@
               <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                   <div class="card h-100">
-                    <img src="#" class="card-img-top" alt="#">
+                    <?php if(has_post_thumbnail()): ?>
+                        <a href="<?php the_permalink(); ?>" class="thumbnail"><?php the_post_thumbnail(); ?></a>
+                    <?php endif; ?>
                     <div class="card-body">
-                      <h5 class="card-title">Service</h5>
-                      <p class="card-text">illum
-                        definitiones no quo, maluisset concludaturque et eum, altera fabulas
-                        ut quo. </p>
-                        <a href="#" class="btn btn-primary">Explore</a>
+                      <h5 class="card-title"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h5><hr>
+                      <p class="card-text"><?php the_excerpt(); ?></p>
+                        <div class="text-center"><a href="<?php the_permalink(); ?>" class="more btn btn-primary">Explore</a></div>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card h-100">
-                    <img src="#" class="card-img-top" alt="#">
+                    <?php if(has_post_thumbnail()): ?>
+                        <a href="<?php the_permalink(); ?>" class="thumbnail"><?php the_post_thumbnail(); ?></a>
+                    <?php endif; ?>
                     <div class="card-body">
-                      <h5 class="card-title">Service</h5>
-                      <p class="card-text">illum
-                        definitiones no quo, maluisset concludaturque et eum, altera fabulas
-                        ut quo. </p>
-                        <a href="#" class="btn btn-primary">Explore</a>
+                      <h5 class="card-title"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h5><hr>
+                      <p class="card-text"><?php the_excerpt(); ?></p>
+                        <div class="text-center"><a href="<?php the_permalink(); ?>" class="more btn btn-primary">Explore</a></div>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card h-100">
-                    <img src="#" class="card-img-top" alt="#">
+                    <?php if(has_post_thumbnail()): ?>
+                        <a href="<?php the_permalink(); ?>" class="thumbnail"><?php the_post_thumbnail(); ?></a>
+                    <?php endif; ?>
                     <div class="card-body">
-                      <h5 class="card-title">Service</h5>
-                      <p class="card-text">illum
-                        definitiones no quo, maluisset concludaturque et eum, altera fabulas
-                        ut quo. </p>
-                        <a href="#" class="btn btn-primary">Explore</a>
+                      <h5 class="card-title"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h5><hr>
+                      <p class="card-text"><?php the_excerpt(); ?></p>
+                        <div class="text-center"><a href="<?php the_permalink(); ?>" class="more btn btn-primary">Explore</a></div>
                     </div>
                   </div>
                 </div>
@@ -162,3 +162,4 @@
         </main>
 
         <?php @include('footer.php');
+
