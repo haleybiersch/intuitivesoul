@@ -11,7 +11,7 @@
         <?php if ($featured_posts->have_posts()) : ?>
             <?php while ($featured_posts->have_posts()) : $featured_posts->the_post(); ?>
                 <div class="col-md-6 col-lg-4">
-                    <div class="preview card">
+                    <div class="preview card h-100">
                         <div class="card-body">
                         <?php if(has_post_thumbnail()): ?>
                             <a href="<?php the_permalink(); ?>" class="thumbnail"><?php the_post_thumbnail(); ?></a>
@@ -37,7 +37,7 @@
         <?php if ($all_posts->have_posts()) : ?>
         <?php while ($all_posts->have_posts()) : $all_posts->the_post(); ?>
         <div class="col-md-6 col-lg-4">
-            <div class="preview card">
+            <div class="preview card h-100">
                 <div class="card-body">
                 <?php if(has_post_thumbnail()): ?>
                     <a href="<?php the_permalink(); ?>" class="thumbnail"><?php the_post_thumbnail(); ?></a>
