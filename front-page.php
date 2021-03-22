@@ -13,15 +13,6 @@
     <!-- End Parallax -->
     
     <!-- Main Content -->
-    <section class="main py-5" id="main">
-	<!-- there is no title above the content: The h1 is in the parallax banner -->
-
-	<?php  if (have_posts()) : while(have_posts()) : the_post(); ?>
-
-		<?php the_content(); ?>
-
-	<?php  endwhile; endif;?>
-	</section>
 
     <section class="blog pb-5">
     	<h2>FEATURED BLOGS</h2>
