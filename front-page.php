@@ -6,7 +6,7 @@
     <div class="skrollable-text">
       <h1>INTUITIVE SOUL</h1>
       <div id="divider"></div>
-      <p>Intuitive Counselor &amp; Radio Host</p>
+      <p>Intuitive Counselor, Energy Clearing &amp; Radio Producer</p>
     </div>
   </section>
   <!-- End Parallax -->
