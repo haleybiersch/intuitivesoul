@@ -26,7 +26,7 @@
           </div>
         </form>
     </div>
-    <small>&copy;2021 Intuitive Soul</small>
+   <small>&copy;<?php echo date("Y"); ?> Intuitive Soul</small>
   </div>
 </footer>
 
