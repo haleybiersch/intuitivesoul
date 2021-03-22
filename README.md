@@ -22,6 +22,12 @@ FUNCTIONS PHP
 - JS & CSS have been re-ordered based on inheritance
 - Corrected file name spelling (file not being loaded - jquery-3.6.0) NOTE: directry spelling for fontawsome, spelled foRtawesome (not corrected)
 
+HEADER.PHP
+- re-inserted the "Skip to Content" link
+
+INDEX.PHP
+- added content renderer
+
 THEME
 - Added the screenshot png for use on the theme page in WP Admin
 
