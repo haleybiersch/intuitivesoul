@@ -24,3 +24,7 @@ FUNCTIONS PHP
 
 THEME
 - Added the screenshot png for use on the theme page in WP Admin
+
+OUTSTANDING ISUES
+- The "Back to Top" button has disappered
+- The "Skip To Content" has disappered
