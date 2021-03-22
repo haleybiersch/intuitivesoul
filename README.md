@@ -2,6 +2,8 @@
 
 Created 9:14 PM 2021-03-21 by JK
 
+NOTE: Some default page templates are identical as content is moved to the WP admin rather than in the page itself. For example, page-about & page-services are the same. This can simply be converted to a page-template.
+
 REVISIONS
 
 Below is a list of files that do not seem to be used in the theme and have been removed:
