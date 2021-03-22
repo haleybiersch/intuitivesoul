@@ -56,6 +56,8 @@ SINGLE.PHP
 - Added main & section tags
 - added sidebar include
 
+PAGE-ABOUT.PHP
+- moved content to the WP page itself. The content rendered adds the text
 
 THEME
 - Added the screenshot png for use on the theme page in WP Admin
