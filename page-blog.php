@@ -6,7 +6,7 @@
 	<!-- Main Content -->
 	<section class="main pt-5" id="main">
     
-    <h1><?php single_cat_title() ?></h1>
+    <h1><?php the_title() ?></h1>
 
     <div class="container blog-page">
         <div class="row">
@@ -24,7 +24,7 @@
                             <div class="text">
                                 <h3 class="card-title"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3><hr>
                                 <p><?php the_excerpt(); ?></p>
-                                <div class="text-center"><a href="<?php the_permalink(); ?>" class="more btn btn-primary">Continue Reading</a></div>
+                                <div class="text-center"><a href="<?php the_permalink(); ?>" class="u-btn-submit">Continue Reading</a></div>
                             </div>
                         </div>
                         </div>
@@ -50,7 +50,7 @@
                     <div>
                         <h3 class="card-title"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3><hr>
                         <p><?php the_excerpt(); ?></p>
-                        <div class="text-center"><a href="<?php the_permalink(); ?>" class="more btn btn-primary">Continue Reading</a></div>
+                        <div class="text-center"><a href="<?php the_permalink(); ?>" class="u-btn-submit">Continue Reading</a></div>
                     </div>
                     </div>
                 </div>
