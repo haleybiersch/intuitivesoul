@@ -35,6 +35,9 @@ FRONT-PAGE.PHP
 - removed sample modal
 - corrected nested tags
 
+SIDEBAR.PHP
+- added linkedin icon
+
 THEME
 - Added the screenshot png for use on the theme page in WP Admin
 
