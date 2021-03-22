@@ -25,6 +25,9 @@ FUNCTIONS PHP
 HEADER.PHP
 - re-inserted the "Skip to Content" link
 
+FOOTER.PHP
+- added dynamic year in the copyright 
+
 INDEX.PHP
 - added content renderer
 - removed sample modal
@@ -34,6 +37,11 @@ FRONT-PAGE.PHP
 - added content renderer
 - removed sample modal
 - corrected nested tags
+
+ARCHIVE.PHP
+- removed page-level styling
+- added proper section
+- added sidebar include
 
 SIDEBAR.PHP
 - added linkedin icon
