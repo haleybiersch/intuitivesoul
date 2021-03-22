@@ -47,6 +47,7 @@ SIDEBAR.PHP
 - added linkedin icon
 
 PAGE-ABOUT.PHP
+PAGE-BLOG.PHP
 - Added section tags
 - added sidebar include
 
