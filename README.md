@@ -27,6 +27,13 @@ HEADER.PHP
 
 INDEX.PHP
 - added content renderer
+- removed sample modal
+- added sidebar include
+
+FRONT-PAGE.PHP
+- added content renderer
+- removed sample modal
+- corrected nested tags
 
 THEME
 - Added the screenshot png for use on the theme page in WP Admin
