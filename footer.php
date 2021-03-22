@@ -1,20 +1,14 @@
 <?php wp_footer();?>
-</div>
-
 
 <footer>
   <div class="row">
-    <div class="col-sm-6 px-5 py-5">
-      <p class="pfooter">If you enjoyed, were touched, and/or inspired<br>
-        by a show, please show your appreciation by donating<br>
-        a small token.</p><br>
-        <p class="pfooter">
-        <button class="u-btn-submit" type="submit">DONATE</button>
-      </p>
+    <div class="col-sm-3 px-4 py-4">
+      <p class="pfooter">If you enjoyed, were touched, and/or inspired by a show, please show your appreciation by donating a small token.</p>
+      <p class="pfooter"><button class="u-btn-submit" type="submit">DONATE</button></p>
     </div>
-    <div class="col-sm-6 px-5 py-5">
-      <p class="pfooter">Intuitive Soul</p>
-        <p class="pfooter">Join Us.</p>
+    <div class="col-sm-6 px-8 py-8">
+      <p class="u-text-1">Intuitive Soul</p>
+    	<p class="u-text-2">Join Us.</p>
         <form action="#" method="POST" class="u-inner-form u-clearfix">
           <div class="u-form-group">
             <label for="email" class="u-label-1">Email</label>
@@ -26,7 +20,7 @@
           </div>
         </form>
     </div>
-   <small>&copy;<?php echo date("Y"); ?> Intuitive Soul</small>
+    <small>&copy;<?php echo date("Y"); ?> Intuitive Soul</small>
   </div>
 </footer>
 
