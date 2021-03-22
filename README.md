@@ -65,6 +65,6 @@ PAGE-ABOUT.PHP
 THEME
 - Added the screenshot png for use on the theme page in WP Admin
 
-OUTSTANDING ISUES
+OUTSTANDING ISSUES
 - The "Back to Top" button has disappered
 - The "Skip To Content" has disappered
