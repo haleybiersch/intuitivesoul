@@ -284,10 +284,11 @@ a:hover {
 
 .search {
   margin-top: 1em;
+  height: 50px;
 }
 .search .searchbox {
   position: relative;
-  min-width: 50px;
+  min-width: 48px;
   width: 0;
   height: 50px;
   float: right;
@@ -339,6 +340,8 @@ a:hover {
 }
 .search .searchbox-icon {
   border-left: 1px solid #DA8954;
+  text-align: right;
+  padding-right: 4px;
 }
 .search .searchbox-open {
   width: 30%;
