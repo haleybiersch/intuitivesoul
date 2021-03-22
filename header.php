@@ -8,7 +8,7 @@
 </head>
 
 <body <?php body_class();?>>
-
+<a href="#main" class="skip-to-content-link">Skip to content</a>
 
   <header >
 <div class="container">
