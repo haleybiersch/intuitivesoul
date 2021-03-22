@@ -16,7 +16,7 @@ if (! defined('ABSPATH')) {
 
 	<h1><?php the_title() ?></h1>
 
-	<div class="container-fluid">
+	<div class="container">
     		<?php
 
     if (have_posts()) {
@@ -27,65 +27,61 @@ if (! defined('ABSPATH')) {
     }
     ?>
     
-    <div id="container-fluid">
-			<h2>Featured Shows</h2>
-			<div class="row">
+    <div class="container media-page">
+		<h2>Featured Shows</h2>
+		<div class="row">
 
-				<table class="table table-striped">
-					<thead>
-						<tr>
-							<th scope="col"></th>
-							<th scope="col">Description</th>
-							<th scope="col">Audio Track</th>
-						</tr>
-					</thead>
-					<tbody>
-      <?php if ($archives->have_posts()) : ?>
-          <?php while ($archives->have_posts()) : $archives->the_post(); ?>
-              <?php
-
-            if (empty($counter)) {
-                $counter = 1;
-            } else {
-                $counter ++;
-            }
-
-            ?>
-    <tr>
-        <?php
-            $args = array(
-                'post_type' => 'attachment',
-                'post_mime_type' => 'audio',
-                'numberposts' => - 1
-            );
-            $audiofiles = get_posts($args);
-
-            foreach ($audiofiles as $file) {
-                $url = wp_get_attachment_url($file->ID);
-                // echo $url .'<br>';// url
-
-                $attr = array(
-                    'src' => $url,
-                    'loop' => '',
-                    'autoplay' => '',
-                    'preload' => 'none'
-                );
-            }
-            ?>
-            <td scope="row"><?php echo $counter; ?></td>
-
-							<td class="show"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></td>
-
-
-							<td class="audio"><?php echo wp_audio_shortcode($attr);?></td>
-						</tr>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th scope="col"></th>
+						<th scope="col">Description</th>
+						<th scope="col">Audio Track</th>
+					</tr>
+				</thead>
+				<tbody>
+              <?php if ($archives->have_posts()) : ?>
+                  <?php while ($archives->have_posts()) : $archives->the_post(); ?>
+                      <?php
+        
+                    if (empty($counter)) {
+                        $counter = 1;
+                    } else {
+                        $counter ++;
+                    }
+        
+                    ?>
+                <tr>
+                <?php
+                    $args = array(
+                        'post_type' => 'attachment',
+                        'post_mime_type' => 'audio',
+                        'numberposts' => - 1
+                    );
+                    $audiofiles = get_posts($args);
+        
+                    foreach ($audiofiles as $file) {
+                        $url = wp_get_attachment_url($file->ID);
+                        // echo $url .'<br>';// url
+        
+                        $attr = array(
+                            'src' => $url,
+                            'loop' => '',
+                            'autoplay' => '',
+                            'preload' => 'none'
+                        );
+                    }
+                    ?>
+                    <td scope="row"><?php echo $counter; ?></td>
+        			<td class="show"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></td>
+        			<td class="audio"><?php echo wp_audio_shortcode($attr);?></td>
+            	</tr>
         <?php endwhile; ?>
         <?php wp_reset_postdata(); ?>
         <?php else : ?>
             <p><?php __('No News'); ?></p>
         <?php endif; ?>
-    
-      </tbody>
+	  			  </tbody>
 				</table>
 
 			</div>
@@ -98,12 +94,12 @@ if (! defined('ABSPATH')) {
 			</div>
 			<br>
 			<div class="row news-heart">
-				<div class="col-lg-2 col-md-3">
+				<div class="col-lg-3 col-md-4">
 					<img
 						src="<?php echo get_template_directory_uri(); ?>/images/laurie.jpg"
 						alt="Portrait of Laurie" class="portrait" />
 				</div>
-				<div class="col-lg-10 col-md-9">
+				<div class="col-lg-9 col-md-8">
 					<p>
 						<strong>News for the Heart</strong> is dedicated to helping you
 						give a voice to your own Soul. Our hearts have the power to free
