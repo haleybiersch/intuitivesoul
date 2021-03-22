@@ -1,9 +1,12 @@
-<?php get_header();?>
+<?php include('header.php') ?>
+<main>
 
-    <div class="all-posts media-page">
-        <div class="row">
-            <div class="col-12"><h1 class="text-center"><?php single_cat_title() ?> <hr></h1></div>
-        </div>
+	<!-- Main Content -->
+	<section class="main pt-5" id="main">
+	
+	<h1><?php single_cat_title() ?></h1>
+
+	<div class="all-posts media-page">
         <div class="latest-stories">
             <div class="row">
                 <?php if (have_posts()) : while(have_posts()) : the_post(); ?>
@@ -20,8 +23,13 @@
                     </div>
                 <?php endwhile; endif;?>
             </div>
-        </div>
-    </div>
+        </div
+
+	</section>
+
+    <?php include('sidebar.php') ?>
+
+</main>
 
 
-<?php get_footer(); ?>
+<?php @include('footer.php'); ?>
