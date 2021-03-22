@@ -46,6 +46,10 @@ ARCHIVE.PHP
 SIDEBAR.PHP
 - added linkedin icon
 
+PAGE-ABOUT.PHP
+- Added section tags
+- added sidebar include
+
 THEME
 - Added the screenshot png for use on the theme page in WP Admin
 
