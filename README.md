@@ -4,7 +4,7 @@ Created 9:14 PM 2021-03-21 by JK
 
 REVISIONS
 
-Below is a list of files that do not seem to be used in the theme:
+Below is a list of files that do not seem to be used in the theme and have been removed:
 - css/nicepage.css (used on the ui-kit, not used)
 - css/home.css (used on the ui-kit, not used)
 - ui-kit.php (this is from the original UI Kit, not used)
