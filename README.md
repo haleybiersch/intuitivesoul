@@ -49,8 +49,10 @@ SIDEBAR.PHP
 PAGE-ABOUT.PHP
 PAGE-BLOG.PHP
 PAGE-CONTECT.PHP
+PAGE-MEDIA.PHP
 - Added main & section tags
 - added sidebar include
+
 
 THEME
 - Added the screenshot png for use on the theme page in WP Admin
