@@ -27,6 +27,7 @@ HEADER.PHP
 
 FOOTER.PHP
 - added dynamic year in the copyright 
+- remove breaks, added style from original style
 
 INDEX.PHP
 - added content renderer
