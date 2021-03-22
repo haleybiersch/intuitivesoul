@@ -48,7 +48,8 @@ SIDEBAR.PHP
 
 PAGE-ABOUT.PHP
 PAGE-BLOG.PHP
-- Added section tags
+PAGE-CONTECT.PHP
+- Added main & section tags
 - added sidebar include
 
 THEME
