@@ -5,7 +5,7 @@
 	<!-- Main Content -->
 	<section class="main pt-5" id="main">
     
-    <h1><?php single_cat_title() ?></h1>
+    <h1><?php the_title() ?></h1>
 
     <div class="blog-post">
         <div class="post">
