@@ -20,3 +20,7 @@ JS code from the original slide-down menu have been removed
 FUNCTIONS PHP
 - Like functions have been placed under one name for loading
 - JS & CSS have been re-ordered based on inheritance
+- Corrected file name spelling (files not being loaded)
+
+THEME
+- Added the screenshot png for use on the theme page in WP Admin
