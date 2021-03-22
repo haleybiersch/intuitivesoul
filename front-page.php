@@ -14,8 +14,7 @@
 
   <!-- Main Content -->
   <section class="main py-5" id="main">
-
-	<h1><?php the_title(); ?></h1>
+  <!-- there is no title above the content: The h1 is in the parallax banner -->
 
 	<?php  if (have_posts()) : while(have_posts()) : the_post(); ?>
 
@@ -36,9 +35,9 @@
                             <a href="<?php the_permalink(); ?>" class="thumbnail"><?php the_post_thumbnail(); ?></a>
                         <?php endif; ?>
                         <div class="text">
-                            <h3 class="card-title"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3><hr>
+                            <h3><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3><hr>
                             <p><?php the_excerpt(); ?></p>
-                            <div class="text-center"><a href="<?php the_permalink(); ?>" class="more btn btn-primary">Continue Reading</a></div>
+                            <div class="text-center"><a href="<?php the_permalink(); ?>" class="u-btn-submit">Continue Reading</a></div>
                         </div>
                     </div>
                     </div>
@@ -65,9 +64,9 @@
                                   <a href="<?php the_permalink(); ?>" class="thumbnail"><?php the_post_thumbnail(); ?></a>
                               <?php endif; ?>
                               <div class="text">
-                                  <h3 class="card-title"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3><hr>
+                                  <h3><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3><hr>
                                   <p><?php the_excerpt(); ?></p>
-                                  <div class="text-center"><a href="<?php the_permalink(); ?>" class="more btn btn-primary">Continue Reading</a></div>
+                                  <div class="text-center"><a href="<?php the_permalink(); ?>" class="u-btn-submit">Continue Reading</a></div>
                               </div>
                           </div>
                           </div>
@@ -79,9 +78,6 @@
               <?php endif; ?>
           </div>
           <br>
-
-          <a href="#" class="u-btn-submit">View All Services</a>
-          <input type="submit" value="submit" class="u-form-control-hidden">
 
         </section>
 
