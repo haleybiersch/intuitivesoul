@@ -3,7 +3,6 @@
 body {
  background-color: white;
 }
-
 a {
  &:hover {
   color: variables.$orange;
@@ -19,9 +18,11 @@ a {
   margin: 0.5em auto;
 
    .icon{
+     font-size: 0.75em;
       margin: 0.125em;
       padding: 0.125em;
       color: black;
+
 
     &:hover {
      color: variables.$orange;

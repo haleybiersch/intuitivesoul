@@ -217,6 +217,7 @@ a:hover {
   margin: 0.5em auto;
 }
 .page .icons .icon {
+  font-size: 0.75em;
   margin: 0.125em;
   padding: 0.125em;
   color: black;
@@ -254,11 +255,12 @@ a:hover {
 .blog-page h2, .blog-page h3 {
   text-align: center;
 }
-.blog-page .preview {
+.blog-page .post {
   margin-bottom: 2em;
 }
 .blog-page .thumbnail {
   display: block;
+  padding-bottom: 1em;
 }
 .blog-page .thumbnail img {
   width: 100%;
