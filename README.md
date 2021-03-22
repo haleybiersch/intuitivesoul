@@ -50,6 +50,9 @@ PAGE-ABOUT.PHP
 PAGE-BLOG.PHP
 PAGE-CONTECT.PHP
 PAGE-MEDIA.PHP
+PAGE-SERVICES.PHP
+PAGE.PHP
+SINGLE.PHP
 - Added main & section tags
 - added sidebar include
 
