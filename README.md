@@ -52,7 +52,12 @@ SIDEBAR.PHP
 PAGE-ABOUT.PHP
 PAGE-BLOG.PHP
 PAGE-CONTECT.PHP
+
 PAGE-MEDIA.PHP
+- removed blogtalk content.  Changed col size on iheart and bmajor to col-3.
+- added Co-Host to table header
+- changed table class to dark striped so I could see my results (Previously showing white font on white table).  Didn't want to mess with styling after our discussion today.
+
 PAGE-SERVICES.PHP
 PAGE.PHP
 SINGLE.PHP
