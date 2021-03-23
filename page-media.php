@@ -31,10 +31,10 @@ if (! defined('ABSPATH')) {
 		<h2>Featured Shows</h2>
 		<div class="row">
 
-			<table class="table table-striped">
+			<table class="table table-dark table-striped">
 				<thead>
 					<tr>
-						<th scope="col"></th>
+						<th scope="col">Co-Host</th>
 						<th scope="col">Description</th>
 						<th scope="col">Audio Track</th>
 					</tr>
@@ -125,19 +125,14 @@ if (! defined('ABSPATH')) {
 			</div>
 			<br>
 			<div class="row logos">
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<a href="https://www.blogtalkradio.com/bemajor" target="_blank"><img
-						src="<?php echo get_template_directory_uri(); ?>/images/blog-talk-radio.png"
-						alt="Blog Talk Radio Logo" /></a>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
+				<div class="col-lg-3 col-md-4 col-sm-6">
 					<a
 						href="https://www.iheart.com/podcast/53-news-for-the-heart-laurie-h-26606367/"
 						target="_blank"><img
 						src="<?php echo get_template_directory_uri(); ?>/images/i-heart-radio.jpg"
 						alt="I heart radio logo" /></a>
 				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
+				<div class="col-lg-3 col-md-4 col-sm-6">
 					<a href="https://bemajor.org/series/news-for-the-heart/"><img
 						src="<?php echo get_template_directory_uri(); ?>/images/be-major.jpg"
 						alt="Be Major Logo" /></a>
