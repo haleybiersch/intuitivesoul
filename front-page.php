@@ -2,7 +2,7 @@
 <main>
     
     <!-- Parallax image scroller. The image is specified in the class -->
-    <section class="skrollable">
+    <section class="skrollable hero">
     	<div class="skrollable-text">
     		<h1>INTUITIVE SOUL</h1>
     		<div id="divider"></div>

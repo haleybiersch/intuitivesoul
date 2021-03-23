@@ -98,6 +98,18 @@ figure {
   margin-bottom: 1em;
 }
 
+skrollable-text {
+  width: 100%;
+}
+
+@media only screen and (max-width: 575.98px) {
+  .skrollable-text h1 {
+    font-size: 3.25em !important;
+  }
+  .skrollable-text p {
+    font-size: 1.25em !important;
+  }
+}
 body {
   position: relative;
 }
