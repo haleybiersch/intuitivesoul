@@ -54,9 +54,10 @@ PAGE-BLOG.PHP
 PAGE-CONTECT.PHP
 
 PAGE-MEDIA.PHP
-- removed blogtalk content.  Changed col size on iheart and bmajor to col-3.
-- added Co-Host to table header
-- changed table class to dark striped so I could see my results (Previously showing white font on white table).  Didn't want to mess with styling after our discussion today.
+- removed blogtalk content.  Changed col size on iheart and bmajor to col-3.  Changed size of images.
+- added item to table header
+- Removed H1 Header
+- changed table class striped and added styling for table to style.css
 
 PAGE-SERVICES.PHP
 PAGE.PHP
