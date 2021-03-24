@@ -14,7 +14,7 @@ if (! defined('ABSPATH')) {
 <main> <!-- Main Content -->
 <section class="main pt-5" id="main">
 
-	<h1><?php the_title() ?></h1>
+
 
 	<div class="container">
     		<?php
@@ -31,12 +31,12 @@ if (! defined('ABSPATH')) {
 		<h2>Featured Shows</h2>
 		<div class="row">
 
-			<table class="table table-dark table-striped">
+			<table class="table table-striped">
 				<thead>
 					<tr>
-						<th scope="col">Co-Host</th>
+						<th scope="col">Item</th>
 						<th scope="col">Description</th>
-						<th scope="col">Audio Track</th>
+						<th scope="col-5">Audio Track</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -56,7 +56,8 @@ if (! defined('ABSPATH')) {
                     $args = array(
                         'post_type' => 'attachment',
                         'post_mime_type' => 'audio',
-                        'numberposts' => - 1
+                        'numberposts' => - 1,
+					
                     );
                     $audiofiles = get_posts($args);
         
@@ -83,21 +84,20 @@ if (! defined('ABSPATH')) {
         <?php endif; ?>
 	  			  </tbody>
 				</table>
-
 			</div>
-			<br>
+			
 			<div class="row">
 				<div class="col-12">
 					<h2>News for the Heart</h2>
 				</div>
-				<br>
+				
 			</div>
-			<br>
+			
 			<div class="row news-heart">
-				<div class="col-lg-3 col-md-4">
+				<div class="col-lg-2 col-md-4">
 					<img
 						src="<?php echo get_template_directory_uri(); ?>/images/laurie.jpg"
-						alt="Portrait of Laurie" class="portrait" />
+						alt="Portrait of Laurie" class="portrait" max width="200" />
 				</div>
 				<div class="col-lg-9 col-md-8">
 					<p>
@@ -115,51 +115,38 @@ if (! defined('ABSPATH')) {
 						Show. I have been a radio host for over 10 years now. Check out my
 						audio shows!!
 					</p>
-					<br>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-12">
 					<h3>Different Places to Listen</h3>
-				</div>
-			</div>
-			<br>
-			<div class="row logos">
-				<div class="col-lg-3 col-md-4 col-sm-6">
-					<a
-						href="https://www.iheart.com/podcast/53-news-for-the-heart-laurie-h-26606367/"
-						target="_blank"><img
-						src="<?php echo get_template_directory_uri(); ?>/images/i-heart-radio.jpg"
-						alt="I heart radio logo" /></a>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-6">
-					<a href="https://bemajor.org/series/news-for-the-heart/"><img
-						src="<?php echo get_template_directory_uri(); ?>/images/be-major.jpg"
-						alt="Be Major Logo" /></a>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<a
-						href="https://podcasts.apple.com/zw/podcast/be-major/id968164566"
-						target="_blank"><img
-						src="<?php echo get_template_directory_uri(); ?>/images/apple-podcasts.jpg"
-						alt="Apple Podcasts Logo" /></a>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<a
-						href="https://www.spreaker.com/show/news-for-the-heart-laurie-huston_1"
-						target="_blank"><img
-						src="<?php echo get_template_directory_uri(); ?>/images/spreaker.png"
-						alt="Spreaker Logo" /></a>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
+				<div class="row logos">
+					<div class="col-lg-2 col-md-4 col-sm-6">
+					<a href="https://bemajor.org/series/news-for-the-heart/"><img 
+					src="<?php echo get_template_directory_uri(); ?>/images/be-major.jpg"
+					alt="Be Major Logo" /></a>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6">
+					<a href="https://podcasts.apple.com/zw/podcast/be-major/id968164566"
+					 target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/apple-podcasts.jpg"
+					alt="Apple Podcasts Logo" /></a>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="https://www.iheart.com/podcast/53-news-for-the-heart-laurie-h-26606367/"
+					target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/i-heart-radio.jpg"
+					alt="I heart radio logo" /></a>
+					</div>			
+					<div class="col-lg-2 col-md-4 col-sm-6">
+					<a href="https://www.spreaker.com/show/news-for-the-heart-laurie-huston_1"
+					target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/spreaker.png"
+					alt="Spreaker Logo" /></a>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6">
 					<a href="https://www.stitcher.com/show/bemajor-radio"
-						target="_blank"><img
-						src="<?php echo get_template_directory_uri(); ?>/images/stitcher.png"
-						alt="Stitcher Logo" /></a>
-				</div>
-			</div>
-		</div>
-	</div>
+					target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/stitcher.png"
+					alt="Stitcher Logo" /></a>
+					</div>
+				</div><!--row logos-->
+		</div><!--media page-->
+	</div><!--container-->
 	
 	</section>
 
