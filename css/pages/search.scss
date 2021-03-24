@@ -88,3 +88,18 @@ body.search {
   height: 500px;
   overflow: visible;
 }
+
+.search-results {
+  h1 {
+    margin: 1em auto;
+  }
+  h2 {
+    text-align: left;
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+
+  .search-post-excerpt {
+    margin-bottom: 0;
+  }
+}
