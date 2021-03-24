@@ -16,14 +16,11 @@
 
 	<a href="#main" class="skip-to-content-link">Skip to content</a>
 	<header>
+
 		<div class="container">
             <div class="search">
-                <form class="searchbox">
-                    <input type="search" placeholder="Search..." name="search" class="searchbox-input" required>
-                    <input type="submit" class="searchbox-submit">
-                    <span class="searchbox-icon text-right"><i class="fa fa-search" aria-hidden="true"></i></span>
-                </form>
-            </div>
+            <?php get_search_form(); ?>
+        </div>
 			<nav>
 					<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/lotus-flower.png" alt="Intuitive Soul Logo" ></a>
 				<div class="nav-button">

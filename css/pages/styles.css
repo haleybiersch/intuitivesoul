@@ -394,4 +394,9 @@ a:hover {
   }
 }
 
+body.search {
+  height: 500px;
+  overflow: visible;
+}
+
 /*# sourceMappingURL=styles.css.map */
