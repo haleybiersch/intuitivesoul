@@ -10,8 +10,16 @@ html, body {
 }
 
 header {
-
+.logo {
+    img {
+      position: relative;
+      bottom: 40px;
+      width: 120px;
+      height: auto;
+    }
+}
   nav {
+    height: 50px;
     padding-top: 0.25em;
     display: flex;
     flex-wrap: wrap;
@@ -59,6 +67,11 @@ header {
 
 
     @media only screen and (max-width: 991.98px) {
+      .logo {
+        img {
+          bottom: 32px;
+        }
+      }
       .nav-button {
         display: block;
         z-index: 1000;

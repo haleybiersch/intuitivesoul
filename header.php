@@ -25,9 +25,7 @@
                 </form>
             </div>
 			<nav>
-				<h4 class="logo">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-				</h4>
+					<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/lotus-flower.png" alt="Intuitive Soul Logo" ></a>
 				<div class="nav-button">
 					<p class="d-none">Mobile Nav Button</p>
 					<div class="line1"></div>
