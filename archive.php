@@ -22,6 +22,7 @@
                         </div>
                     </div>
                 <?php endwhile; endif;?>
+                <?php echo paginate_links(); ?>
             </div>
         </div
 
