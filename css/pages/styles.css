@@ -102,6 +102,14 @@ skrollable-text {
   width: 100%;
 }
 
+.pagination-nav {
+  text-align: center;
+}
+.pagination-nav .pagination {
+  max-width: 330px;
+  margin: auto;
+}
+
 @media only screen and (max-width: 575.98px) {
   .skrollable-text h1 {
     font-size: 3.25em !important;

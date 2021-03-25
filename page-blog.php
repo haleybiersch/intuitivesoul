@@ -4,7 +4,7 @@
 <main>
 
 	<!-- Main Content -->
-	<section class="main pt-5" id="main">
+	<section class="pt-5" id="main">
     
     <h1><?php the_title() ?></h1>
 

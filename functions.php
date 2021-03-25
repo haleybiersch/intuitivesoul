@@ -130,7 +130,7 @@ $services = new WP_Query(array(
     //custom pagination
 //  Custom pagination function
 
-function cq_pagination($pages = '', $range = 4)
+function cq_pagination($pages = '', $range = 2)
 {
     $showitems = ($range * 2)+1;
     global $paged;
@@ -146,9 +146,9 @@ function cq_pagination($pages = '', $range = 4)
     }
     if(1 != $pages)
     {
-        echo "<nav aria-label='Page navigation example'>  <ul class='pagination'> <span>Page ".$paged." of ".$pages."</span>";
-        if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo; First</a>";
-        if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo; Previous</a>";
+        echo "<div aria-label='Page navigation' class='pagination-nav'> <ul class='pagination'>";
+        if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a class=\"page-link\" href='".get_pagenum_link(1)."'>&laquo;</a>";
+        if($paged > 1 && $showitems < $pages) echo "<a class=\"page-link\" href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
         for ($i=1; $i <= $pages; $i++)
         {
             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
@@ -156,8 +156,8 @@ function cq_pagination($pages = '', $range = 4)
                 echo ($paged == $i)? "<li class=\"page-item active\"><a class='page-link'>".$i."</a></li>":"<li class='page-item'> <a href='".get_pagenum_link($i)."' class=\"page-link\">".$i."</a></li>";
             }
         }
-        if ($paged < $pages && $showitems < $pages) echo " <li class='page-item'><a class='page-link' href=\"".get_pagenum_link($paged + 1)."\"><i class='flaticon flaticon-back'></i></a></li>";
-        if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo " <li class='page-item'><a class='page-link' href='".get_pagenum_link($pages)."'><i class='flaticon flaticon-arrow'></i></a></li>";
-        echo "</ul></nav>\n";
+        if ($paged < $pages && $showitems < $pages) echo " <li class='page-item'><a class=\"page-link\" href=\"".get_pagenum_link($paged + 1)."\">&rsaquo; </a></li>";
+        if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo " <li class='page-item'><a class=\"page-link\" href='".get_pagenum_link($pages)."'> &raquo;</a></li> ";
+        echo "</ul><p>Page ".$paged." of ".$pages."</p></div>\n";
     }
 }
