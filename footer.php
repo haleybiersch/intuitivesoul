@@ -3,7 +3,7 @@
 <footer>
   <div class="container">
       <div class="row">
-        <div class="col-sm-3 px-4 py-4">
+        <div class="col-sm-3 px-4 py-4 text-center">
           <p class="pfooter">If you enjoyed, were touched, and/or inspired by a show, please show your appreciation by donating a small token.</p>
           <a href="https://www.paypal.com/donate/?token=oX1R3YOVF1bZA64F4yN019BVinw1uGvjFbsZel4fKxVwTtU0np46ZySwT3Ya7CM3QGFxTW&country.x=CA&locale.x=CA" class="pfooter u-btn-submit" target="_blank">DONATE</a>
         </div>
