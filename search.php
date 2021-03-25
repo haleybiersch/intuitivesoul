@@ -8,6 +8,7 @@
             <h2 class="search-post-title"><a class="search-post-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
             <p class="search-post-excerpt"><?php the_excerpt(); ?></p>
         <?php endwhile; ?>
+        <?php echo paginate_links(); ?>
         <?php get_sidebar(); ?>
     </div>
 </main>
