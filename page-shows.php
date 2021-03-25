@@ -1,7 +1,8 @@
 <?php
-/* Template Name: Custom Show - Use custom field (trim 0audio/mpeg) */
+/* Template Name: Custom Show */
 /**
  * This displays the audio file in an HTML5 player. Since the enclosure contains extra characters, we remove them before outputing them.
+ * Use custom field called 'enclosure' and remove the extra attributes in the string (0 audio/mpeg)
  */
 // Exit if accessed directly
 if (! defined('ABSPATH')) {
