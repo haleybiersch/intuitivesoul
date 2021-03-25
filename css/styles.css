@@ -420,3 +420,56 @@ small {
 .modal-header {
 	border: none!important;
 }
+
+/* Tables styles - used on the media page */
+table td.show, table td.show a, table td.show span  {
+	color: var(--theme-c2);
+	min-width: 75%;
+	font-size: 20px;
+	font-weight:normal;
+	vertical-align:middle;
+}
+
+table td.show span {
+	font-weight:lighter;
+	font-style: italic;
+	color: var(--nav-secondary);
+}
+
+table td.audio  {
+	max-width: 25%;
+	text-align: right;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+	color: var(--theme-c2);
+}
+
+/* Customize audio controls */
+/*
+audio {
+  width: 115px;
+}
+
+audio::-webkit-media-controls-panel {
+  -webkit-justify-content: center;
+  height: 25px;
+}
+*/
+
+/* Removes the timeline */
+/*
+audio::-webkit-media-controls-timeline {
+  display: none !important;
+}*/
+
+/* Removes the time stamp */
+/*
+audio::-webkit-media-controls-current-time-display {
+  display: none;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+*/
