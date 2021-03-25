@@ -8,7 +8,9 @@
             <h2 class="search-post-title"><a class="search-post-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
             <p class="search-post-excerpt"><?php the_excerpt(); ?></p>
         <?php endwhile; ?>
-        <?php echo paginate_links(); ?>
+        <?php 	if (function_exists("cq_pagination")) {
+            cq_pagination($wp_query->max_num_pages);
+        } ?>
         <?php get_sidebar(); ?>
     </div>
 </main>

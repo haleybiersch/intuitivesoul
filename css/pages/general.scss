@@ -39,10 +39,27 @@ skrollable-text {
 
 .pagination-nav {
   text-align: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
 
   .pagination {
-    max-width: 330px;
-    margin: auto;
+    display: block;
+    .active {
+      a {
+        background-color: variables.$orange;
+        border-color: variables.$orange;
+      }
+    }
+
+    li {
+      display: inline;
+
+      a {
+        display: inline;
+        color: variables.$orange;
+      }
+
+    }
   }
 }
 

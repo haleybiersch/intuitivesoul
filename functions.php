@@ -103,7 +103,7 @@ $services = new WP_Query(array(
     'post_status' => 'publish',
     'posts_per_page' => '6',
 ));
-
+/*
 // pagination for archive.php
     global $wp_query;
     $total = $wp_query->max_num_pages;
@@ -125,9 +125,8 @@ $services = new WP_Query(array(
             'mid_size' => 4,
             'type' => 'list'
         ));
-    }
+    } */
 
-    //custom pagination
 //  Custom pagination function
 
 function cq_pagination($pages = '', $range = 2)
@@ -147,8 +146,8 @@ function cq_pagination($pages = '', $range = 2)
     if(1 != $pages)
     {
         echo "<div aria-label='Page navigation' class='pagination-nav'> <ul class='pagination'>";
-        if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a class=\"page-link\" href='".get_pagenum_link(1)."'>&laquo;</a>";
-        if($paged > 1 && $showitems < $pages) echo "<a class=\"page-link\" href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
+        if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<li class='page-item'><a class=\"page-link\" href='".get_pagenum_link(1)."'>&laquo;</a></li>";
+        if($paged > 1 && $showitems < $pages) echo "<li class='page-item'><a class=\"page-link\" href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a></li>";
         for ($i=1; $i <= $pages; $i++)
         {
             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))

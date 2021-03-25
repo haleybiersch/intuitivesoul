@@ -22,7 +22,9 @@
                         </div>
                     </div>
                 <?php endwhile; endif;?>
-                <?php echo paginate_links(); ?>
+                <?php 	if (function_exists("cq_pagination")) {
+                    cq_pagination($wp_query->max_num_pages);
+                } ?>
             </div>
         </div
 

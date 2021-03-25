@@ -104,10 +104,22 @@ skrollable-text {
 
 .pagination-nav {
   text-align: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 .pagination-nav .pagination {
-  max-width: 330px;
-  margin: auto;
+  display: block;
+}
+.pagination-nav .pagination .active a {
+  background-color: #DA8954;
+  border-color: #DA8954;
+}
+.pagination-nav .pagination li {
+  display: inline;
+}
+.pagination-nav .pagination li a {
+  display: inline;
+  color: #DA8954;
 }
 
 @media only screen and (max-width: 575.98px) {
