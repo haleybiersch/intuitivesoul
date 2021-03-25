@@ -1,8 +1,7 @@
 <?php
-/* Template Name: Custom Show */
+/* Template Name: Custom Show - Use custom field (trim 0audio/mpeg) */
 /**
  * This displays the audio file in an HTML5 player. Since the enclosure contains extra characters, we remove them before outputing them.
- * Use custom field called 'enclosure' and remove the extra attributes in the string (0 audio/mpeg)
  */
 // Exit if accessed directly
 if (! defined('ABSPATH')) {
@@ -50,7 +49,7 @@ if (! defined('ABSPATH')) {
                     $arr_posts->the_post();
                     ?>
 					<tr>
-                        <td class="show"><span><?php the_date('Y-m-d'); ?></span> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></td>
+                        <td class="show"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></td>
                         <td><?php 
                             if ( get_post_meta($post->ID, 'enclosure', true) ) {
                                 $thefile = get_post_meta($post->ID, 'enclosure', true);
