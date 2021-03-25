@@ -13,6 +13,14 @@
             <div class="col-12"><h2>Latest Posts</h2></div>
         </div>
         <div class="row all-posts">
+            <?php  $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+
+            $args = array(
+                'posts_per_page' => 6,// query last 5 posts
+                'paged' => $paged,
+                'category_name' => 'blog',
+            );
+            $all_posts = new WP_Query($args); ?>
             <?php if ($all_posts->have_posts()) : ?>
                 <?php while ($all_posts->have_posts()) : $all_posts->the_post(); ?>
                     <div class="col-md-6 col-lg-4 post">
@@ -31,6 +39,9 @@
                     </div>
                 <?php endwhile; ?>
                 <?php wp_reset_postdata(); ?>
+            <?php 	if (function_exists("cq_pagination")) {
+                    cq_pagination($all_posts->max_num_pages);
+                } ?>
             <?php else : ?>
                 <p><?php __('No News'); ?></p>
             <?php endif; ?>
