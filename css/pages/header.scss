@@ -24,6 +24,7 @@ header {
     display: flex;
     flex-wrap: wrap;
 
+
     a {
       text-decoration: none;
     }
@@ -51,6 +52,34 @@ header {
         }
       }
     }
+  .drop {
+    display: block;
+  }
+    .menu-item-has-children {
+      position: relative;
+      display: inline-block;
+
+      &:hover {
+        ul {
+          display: block;
+          background-color: white;
+        }
+      }
+
+      ul {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+        padding-left: 0;
+
+        li {
+          display: block;
+        }
+
+      }
+    }
+
     .nav-button {
       display: none;
       cursor: pointer;
@@ -67,6 +96,33 @@ header {
 
 
     @media only screen and (max-width: 991.98px) {
+      .menu-item-has-children {
+        position: static;
+
+        &:hover {
+          ul {
+            display: block;
+            background-color: black;
+
+            li {
+              background-color: black;
+            }
+          }
+        }
+
+        ul {
+          display: none;
+          position: static;
+          min-width: 100%;
+          z-index: 1;
+          padding-left: 0;
+
+          li {
+            display: block;
+          }
+
+        }
+      }
       .logo {
         img {
           bottom: 32px;

@@ -25,3 +25,38 @@ const navSlide = () => {
 
 navSlide();
 
+// Drop down menu
+const dropDown = () => {
+    const childNav = document.querySelector('.menu-item-has-children');
+    const dropLink = document.querySelectorAll('.menu-item-has-children li a');
+    childNav.addEventListener('click', ()=> {
+    childNav.classList.toggle('drop');
+    });
+    childNav.addEventListener('click', (e) => {
+        e.preventDefault();
+    });
+
+
+
+}
+dropDown();
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+*/
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.menu-item-has-children')) {
+        var dropdowns = document.getElementsByClassName("sub-menu")
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}

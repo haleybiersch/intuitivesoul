@@ -103,29 +103,6 @@ $services = new WP_Query(array(
     'post_status' => 'publish',
     'posts_per_page' => '6',
 ));
-/*
-// pagination for archive.php
-    global $wp_query;
-    $total = $wp_query->max_num_pages;
-// Only paginate if we have more than one page
-    if ($total > 1) {
-        // Get the current page
-        if (!$current_page = get_query_var('paged'))
-            $current_page = 1;
-        // Structure of “format” depends on whether we’re using pretty permalinks
-
-        $format = $wp_rewrite->using_index_permalinks() && !strpos($pagenum_link, 'index.php') ? 'index.php' : '';
-        $format .= $wp_rewrite->using_permalinks() ? user_trailingslashit($wp_rewrite->pagination_base . '/%#%', 'paged') : '?paged=%#%';
-
-        echo paginate_links(array(
-            'base' => get_pagenum_link(1) . '%_%',
-            'format' => $format,
-            'current' => $current_page,
-            'total' => $total,
-            'mid_size' => 4,
-            'type' => 'list'
-        ));
-    } */
 
 //  Custom pagination function
 

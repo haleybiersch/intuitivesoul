@@ -176,6 +176,27 @@ header nav .navigation li a {
   width: 100%;
   padding: 0.25em;
 }
+header nav .drop {
+  display: block;
+}
+header nav .menu-item-has-children {
+  position: relative;
+  display: inline-block;
+}
+header nav .menu-item-has-children:hover ul {
+  display: block;
+  background-color: white;
+}
+header nav .menu-item-has-children ul {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  padding-left: 0;
+}
+header nav .menu-item-has-children ul li {
+  display: block;
+}
 header nav .nav-button {
   display: none;
   cursor: pointer;
@@ -189,6 +210,26 @@ header nav .nav-button div {
   background-color: black;
 }
 @media only screen and (max-width: 991.98px) {
+  header nav .menu-item-has-children {
+    position: static;
+  }
+  header nav .menu-item-has-children:hover ul {
+    display: block;
+    background-color: black;
+  }
+  header nav .menu-item-has-children:hover ul li {
+    background-color: black;
+  }
+  header nav .menu-item-has-children ul {
+    display: none;
+    position: static;
+    min-width: 100%;
+    z-index: 1;
+    padding-left: 0;
+  }
+  header nav .menu-item-has-children ul li {
+    display: block;
+  }
   header nav .logo img {
     bottom: 32px;
   }
