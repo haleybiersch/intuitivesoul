@@ -40,6 +40,7 @@ if (! defined('ABSPATH')) {
                 'post_status' => 'publish',
                 'category_name' => 'archives',
                 'posts_per_page' => 10,
+                'paged' => $paged
             );
             $arr_posts = new WP_Query( $args );
              
@@ -65,12 +66,16 @@ if (! defined('ABSPATH')) {
 					</tr>                    
                     <?php
                 endwhile;
+
             endif;
             ?>
 
 	  			  </tbody>
 				</table>
-
+            <?php
+            if (function_exists("cq_pagination")) {
+                cq_pagination($arr_posts->max_num_pages);
+            }?>
 			</div>
 			<br>
 			<div class="row">
