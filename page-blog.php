@@ -50,8 +50,8 @@
             <div class="col-12"><h2>Featured Posts</h2></div>
         </div>
         <div class="row featured-posts">
-            <?php if ($featured_posts->have_posts()) : ?>
-                <?php while ($featured_posts->have_posts()) : $featured_posts->the_post(); ?>
+            <?php if ($featured_blogs->have_posts()) : ?>
+                <?php while ($featured_blogs->have_posts()) : $featured_blogs->the_post(); ?>
                     <div class="col-md-6 col-lg-4 post">
                         <div class="preview card h-100">
                             <div class="card-body">
