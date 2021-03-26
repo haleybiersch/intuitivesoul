@@ -1,5 +1,5 @@
 <?php @include('header.php'); ?>
-<main>
+<main id="main">
 
     <!-- Parallax image scroller. The image is specified in the class -->
     <section class="skrollable hero">
