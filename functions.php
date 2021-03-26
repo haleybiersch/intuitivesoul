@@ -8,18 +8,18 @@ function load_styles(){
     // load BS styles
     wp_register_style('bootstrapcss', get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, 'all');
     wp_enqueue_style('bootstrapcss');
-    
+
     // load FA icons **** NOTE SPELLING MISTAKE IN FOLDER NAME ******
     wp_register_style('faicons', get_template_directory_uri() . '/node_modules/@fortawesome/fontawesome-free/css/all.css', array(), false, 'all');
     wp_enqueue_style('faicons');
-    
+
     wp_register_style('sass', get_template_directory_uri() . '/css/pages/styles.css', array(), false, 'all');
     wp_enqueue_style('sass');
-    
+
     // root styles, loaded last to override any BS rules
     wp_register_style('rootcss', get_template_directory_uri() . '/css/styles.css', array(), false, 'all');
     wp_enqueue_style('rootcss');
-  
+
 }
 
 add_action('wp_enqueue_scripts', 'load_styles');
@@ -28,15 +28,15 @@ function load_js(){
 
     // unload any jquery previously loaded
     wp_deregister_script('jquery');
-    
+
     // load the bootstrap JS
     wp_enqueue_script('jquery', get_template_directory_uri() . '/js/jquery-3.6.0.min.js', '', 1, true);
     wp_enqueue_script('jquery');
- 
+
     // load the JQuery
     wp_register_script('bootstrapjs', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', '', 1, true);
     wp_enqueue_script('bootstrapjs');
-    
+
     // header code
     wp_enqueue_script('headerjs', get_template_directory_uri() . '/js/header.js', '', 1, true);
     wp_enqueue_script('headerjs');
@@ -44,7 +44,7 @@ function load_js(){
     // search code
     wp_enqueue_script('searchjs', get_template_directory_uri() . '/js/search.js', '', 1, true);
     wp_enqueue_script('searchjs');
-   
+
     // custom jquery/js code
     wp_register_script('customjs', get_template_directory_uri() . '/js/scripts.js', '', 1, true);
     wp_enqueue_script('customjs');
@@ -78,8 +78,14 @@ function cn_include_content($pid) {
 
 
 // show all featured posts
-$featured_posts = new WP_Query(array(
-    'category_name' => 'featured',
+$featured_blogs = new WP_Query(array(
+    'category_name' => 'featured blogs',
+    'post_status' => 'publish',
+    'posts_per_page' => 3,
+));
+
+$featured_services = new WP_Query(array(
+    'category_name' => 'featured services',
     'post_status' => 'publish',
     'posts_per_page' => 3,
 ));
