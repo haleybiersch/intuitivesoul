@@ -179,19 +179,9 @@ header nav .navigation li a {
 header nav .drop {
   display: block;
 }
-header nav .sub-menu {
-  float: right;
-}
-header nav .sub-menu li {
-  width: 100%;
-}
 header nav .menu-item-has-children {
   position: relative;
   display: inline-block;
-}
-header nav .menu-item-has-children ul {
-  float: right;
-  text-align: center;
 }
 header nav .menu-item-has-children:hover ul {
   display: block;
@@ -200,9 +190,10 @@ header nav .menu-item-has-children:hover ul {
 header nav .menu-item-has-children ul {
   display: none;
   position: absolute;
+  right: 0;
   min-width: 160px;
   z-index: 1;
-  padding-left: 0;
+  padding: 4px;
 }
 header nav .menu-item-has-children ul li {
   display: block;

@@ -55,24 +55,11 @@ header {
   .drop {
     display: block;
   }
-    .sub-menu {
-      float: right;
-      li {
-        width: 100%;
 
-        a {
-
-        }
-      }
-    }
     .menu-item-has-children {
       position: relative;
       display: inline-block;
 
-      ul {
-        float:right;
-        text-align: center;
-      }
 
       &:hover {
         ul {
@@ -84,9 +71,10 @@ header {
       ul {
         display: none;
         position: absolute;
+        right: 0;
         min-width: 160px;
         z-index: 1;
-        padding-left: 0;
+        padding: 4px;
 
         li {
           display: block;
