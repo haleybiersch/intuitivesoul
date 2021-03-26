@@ -27,16 +27,18 @@ navSlide();
 
 // Drop down menu
 const dropDown = () => {
-    const childNav = document.querySelector('.menu-item-has-children');
-    const dropLink = document.querySelectorAll('.menu-item-has-children li a');
-    childNav.addEventListener('click', ()=> {
+   const childNav = document.querySelector('.menu-item-has-children');
+    const dropLink = document.querySelectorAll('.menu-item-has-children a');
+    childNav.addEventListener('click', (e)=> {
     childNav.classList.toggle('drop');
-    });
-    childNav.addEventListener('click', (e) => {
-        e.preventDefault();
-    });
+    e.preventDefault();
 
+        dropLink.forEach((child) => {
+            child.addEventListener('click', (e) => {
+                e.stopPropagation();});
 
+        });
+    });
 
 }
 dropDown();
