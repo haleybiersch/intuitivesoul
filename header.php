@@ -14,7 +14,7 @@
 
 <body <?php body_class();?>>
 
-	<a href="#main" class="skip-to-content-link">Skip to content</a>
+	<a href="<?php get_template_directory_uri(); ?>#main" class="skip-to-content-link">Skip to content</a>
 	<header>
 
 		<div class="container">
