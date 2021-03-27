@@ -3,23 +3,21 @@
 
 <main>
 
-	<!-- Main Content -->
-	<section class="main pt-5" id="main">
-
+	  <h1><?php the_title() ?></h1>
+   <!-- Main Content -->
+   <section class="main pt-5" id="main">
+	   <h1><?php the_title() ?></h1>
+		 <br>
         <div class="row services">
             <?php if ($services->have_posts()) : ?>
                 <?php while ($services->have_posts()) : $services->the_post(); ?>
                     <div class="col-md-8">
-
                                 <div class="text">
-                                    <h3>
-                                        <a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a>
-                                    </h3>
-
-                                    <p><?php the_excerpt(); ?></p>
+                                    <p><?php the_content(); ?></p>
                                     <div class="text-center">
                                         <a href="<?php the_permalink(); ?>" class="u-btn-submit">Continue Reading</a>
-                                    </div>
+																					<br>
+																		</div>
                                 </div>
                     </div>
                     <div class="col-md-4">
@@ -29,7 +27,6 @@
                         <?php endif; ?>
                     </div>
                 <div>
-
                 </div>
                 <?php endwhile; ?>
                 <?php wp_reset_postdata(); ?>
@@ -37,8 +34,6 @@
                 <p><?php __('No News'); ?></p>
             <?php endif; ?>
         </div>
-
+				<br>
 </main>
-
-
 <?php get_footer();?>
