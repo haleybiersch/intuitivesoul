@@ -127,7 +127,7 @@ skrollable-text {
   position: fixed;
   bottom: 20px;
   right: 30px;
-  z-index: 99;
+  z-index: 98;
   background-color: #DA8954;
   border: none;
   outline: none;
@@ -148,14 +148,26 @@ body {
   position: relative;
 }
 
+html {
+  margin-top: 100px;
+}
+
 html, body {
   width: 100%;
   overflow-x: hidden;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  z-index: 99;
+}
 header .logo img {
   position: relative;
-  bottom: 40px;
+  bottom: 44px;
   width: 120px;
   height: auto;
 }
@@ -288,6 +300,10 @@ header nav .nav-button div {
     transform: rotate(45deg) translate(-5px, -6px);
     background-color: white;
   }
+  header nav .logo img {
+    width: 100px;
+    bottom: 40px;
+  }
   @keyframes navLinkFade {
     from {
       opacity: 0;
@@ -302,6 +318,11 @@ header nav .nav-button div {
 @media only screen and (max-width: 575.98px) {
   header nav .nav-active {
     width: 100%;
+  }
+  header nav .logo img {
+    position: relative;
+    width: 90px;
+    bottom: 30px;
   }
 }
 

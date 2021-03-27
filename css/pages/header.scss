@@ -3,6 +3,9 @@ body {
   position: relative;
 
 }
+html {
+  margin-top: 100px;
+}
 
 html, body {
  width: 100%;
@@ -10,10 +13,16 @@ html, body {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  z-index: 99;
 .logo {
     img {
       position: relative;
-      bottom: 40px;
+      bottom: 44px;
       width: 120px;
       height: auto;
     }
@@ -181,6 +190,13 @@ header {
           background-color: white;
         }
       }
+      .logo {
+        img {
+          width: 100px;
+          bottom: 40px;
+        }
+      }
+
 
       @keyframes navLinkFade {
         from {
@@ -197,6 +213,15 @@ header {
       .nav-active{
         width:100%;
       }
+
+      .logo {
+        img {
+          position: relative;
+          width: 90px;
+          bottom: 30px;
+        }
+      }
+
     }
   }
 
