@@ -27,10 +27,11 @@ navSlide();
 
 // Drop down menu
 const dropDown = () => {
-   const childNav = document.querySelector('.menu-item-has-children');
+    const childNav = document.querySelector('.menu-item-has-children');
+    const subMenu = document.querySelector('.sub-menu');
     const dropLink = document.querySelectorAll('.menu-item-has-children a');
-    childNav.addEventListener('click', (e)=> {
-    childNav.classList.toggle('drop');
+   childNav.addEventListener('click', (e)=> {
+   subMenu.classList.toggle('drop');
     e.preventDefault();
 
         dropLink.forEach((child) => {
@@ -41,21 +42,20 @@ const dropDown = () => {
     });
 
 }
-dropDown();
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
+window.addEventListener('click', (event) =>{
     if (!event.target.matches('.menu-item-has-children')) {
-        var dropdowns = document.getElementsByClassName("sub-menu")
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
+        const subMenu = document.querySelector('.sub-menu');
+        if (subMenu.classList.contains('drop')) {
+            subMenu.classList.remove('drop');
         }
     }
-}
+});
+
+dropDown();
+
+
+
+
 
 
 

@@ -202,6 +202,9 @@ header nav .navigation li a {
   width: 100%;
   padding: 0.25em;
 }
+header nav .sub-menu {
+  display: none;
+}
 header nav .drop {
   display: block;
 }
@@ -214,12 +217,8 @@ header nav .menu-item-has-children {
   position: relative;
   display: inline-block;
 }
-header nav .menu-item-has-children:hover ul {
-  display: block;
-}
 header nav .menu-item-has-children ul {
   background-color: white;
-  display: none;
   position: absolute;
   right: 0;
   min-width: 160px;
@@ -245,11 +244,7 @@ header nav .nav-button div {
   header nav .menu-item-has-children {
     position: static;
   }
-  header nav .menu-item-has-children:hover ul li {
-    background-color: black;
-  }
   header nav .menu-item-has-children ul {
-    display: none;
     position: static;
     min-width: 100%;
     z-index: 1;

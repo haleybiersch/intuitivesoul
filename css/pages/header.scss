@@ -62,7 +62,9 @@ header {
       }
     }
 
-
+  .sub-menu {
+    display: none;
+  }
     .drop {
     display: block;
   }
@@ -76,15 +78,10 @@ header {
       position: relative;
       display: inline-block;
 
-      &:hover {
-        ul {
-         display: block;
-        }
-      }
+
 
       ul {
         background-color: white;
-       display: none;
         position: absolute;
         right: 0;
         min-width: 160px;
@@ -117,17 +114,7 @@ header {
       .menu-item-has-children {
         position: static;
 
-        &:hover {
-          ul {
-            //display: block;
-            li {
-              background-color: black;
-            }
-          }
-        }
-
         ul {
-          display: none;
           position: static;
           min-width: 100%;
           z-index: 1;
