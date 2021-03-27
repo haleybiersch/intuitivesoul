@@ -1,12 +1,12 @@
 <?php @include('header.php'); ?>
-<main id="main">
+<main>
 
     <!-- Parallax image scroller. The image is specified in the class -->
     <section class="skrollable hero">
     	<div class="skrollable-text">
     		<h1>INTUITIVE SOUL</h1>
     		<div id="divider"></div>
-    		<p>Intuitive Counselor, Energy Clearing &amp; Radio Producer</p>
+    		<p>Intuitive Counselor, Energy Clearing &amp; Producer</p>
     	</div>
     </section>
 
@@ -34,7 +34,7 @@
         						<hr>
         						<p><?php the_excerpt(); ?></p>
         						<div class="text-center">
-        							<a href="<?php the_permalink(); ?>" class="u-btn-submit">Continue Reading</a>
+									<a href="<?php the_permalink(); ?>" class="u-btn-submit">Continue Reading<span class="d-none"><?php the_title() ?></span></a>
         						</div>
         					</div>
         				</div>
@@ -70,7 +70,7 @@
     							<hr>
     							<p><?php the_excerpt(); ?></p>
     							<div class="text-center">
-    								<a href="<?php the_permalink(); ?>" class="u-btn-submit">Continue Reading</a>
+									<a href="<?php the_permalink(); ?>" class="u-btn-submit">Continue Reading<span class="d-none"><?php the_title() ?></span></a>
     							</div>
     						</div>
     					</div>
