@@ -34,7 +34,7 @@ const dropDown = () => {
    childNav.addEventListener('click', (e)=> {
    subMenu.classList.toggle('drop');
     e.preventDefault();
-
+       e.stopPropagation();
         dropLink.forEach((child) => {
             child.addEventListener('click', (e) => {
                 e.stopPropagation();});
@@ -49,11 +49,12 @@ const offClick = () => {
         if (!e.target.matches('.menu-item-has-children')) {
             const subMenu = document.querySelector('.sub-menu');
             if (subMenu.classList.contains('drop')) {
-                //subMenu.classList.toggle('drop');
+                subMenu.classList.toggle('drop');
             }
         }
     });
 }
+offClick();
 dropDown();
 
 
