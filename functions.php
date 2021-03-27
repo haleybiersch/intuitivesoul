@@ -46,8 +46,8 @@ function load_js(){
     wp_enqueue_script('searchjs');
 
     // custom jquery/js code
-    wp_register_script('customjs', get_template_directory_uri() . '/js/scripts.js', '', 1, true);
-    wp_enqueue_script('customjs');
+   // wp_register_script('customjs', get_template_directory_uri() . '/js/scripts.js', '', 1, true);
+   // wp_enqueue_script('customjs');
 }
 
 add_action('wp_enqueue_scripts', 'load_js');

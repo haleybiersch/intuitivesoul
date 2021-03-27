@@ -7,4 +7,7 @@
         <a href=""><i class="fab fa-linkedin"></i></a>
     </div>
     <!-- End floating socal icons -->
+    <div>
+        <button class="btn-top" title="Go Back To Top">Top</button>
+    </div>
 </aside>

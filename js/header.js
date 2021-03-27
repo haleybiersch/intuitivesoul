@@ -56,3 +56,32 @@ window.onclick = function(event) {
         }
     }
 }
+
+
+
+const btn = document.querySelector('.btn-top');
+
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollDown()};
+
+function scrollDown() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 || document.scrollTop > 100) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+}
+// back to top
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+function backToTop() {
+    btn.addEventListener('click', () => {
+        topFunction();
+    });
+}
+
+backToTop();
