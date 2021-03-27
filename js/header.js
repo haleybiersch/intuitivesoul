@@ -60,13 +60,13 @@ window.onclick = function(event) {
 
 
 const btn = document.querySelector('.btn-top');
-
+const main = document.querySelector('main');
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollDown()};
 
 function scrollDown() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 || document.scrollTop > 100) {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
         btn.style.display = "block";
     } else {
         btn.style.display = "none";
