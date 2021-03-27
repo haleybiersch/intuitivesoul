@@ -61,24 +61,30 @@ header {
         }
       }
     }
-  .drop {
+
+
+    .drop {
     display: block;
   }
 
+    ul.navigation > .menu-item-has-children > a::after {
+      content: "▼";
+      padding-left: 3px;
+      font-size: 12px;
+    }
     .menu-item-has-children {
       position: relative;
       display: inline-block;
 
-
       &:hover {
         ul {
-          display: block;
-          background-color: white;
+         display: block;
         }
       }
 
       ul {
-        display: none;
+        background-color: white;
+       display: none;
         position: absolute;
         right: 0;
         min-width: 160px;
@@ -113,9 +119,7 @@ header {
 
         &:hover {
           ul {
-            display: block;
-            background-color: black;
-
+            //display: block;
             li {
               background-color: black;
             }
@@ -128,6 +132,7 @@ header {
           min-width: 100%;
           z-index: 1;
           padding-left: 0;
+          background-color: black;
 
           li {
             display: block;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .about-page {
   /*
   header {
@@ -204,15 +205,20 @@ header nav .navigation li a {
 header nav .drop {
   display: block;
 }
+header nav ul.navigation > .menu-item-has-children > a::after {
+  content: "▼";
+  padding-left: 3px;
+  font-size: 12px;
+}
 header nav .menu-item-has-children {
   position: relative;
   display: inline-block;
 }
 header nav .menu-item-has-children:hover ul {
   display: block;
-  background-color: white;
 }
 header nav .menu-item-has-children ul {
+  background-color: white;
   display: none;
   position: absolute;
   right: 0;
@@ -239,10 +245,6 @@ header nav .nav-button div {
   header nav .menu-item-has-children {
     position: static;
   }
-  header nav .menu-item-has-children:hover ul {
-    display: block;
-    background-color: black;
-  }
   header nav .menu-item-has-children:hover ul li {
     background-color: black;
   }
@@ -252,6 +254,7 @@ header nav .nav-button div {
     min-width: 100%;
     z-index: 1;
     padding-left: 0;
+    background-color: black;
   }
   header nav .menu-item-has-children ul li {
     display: block;
