@@ -15,7 +15,7 @@
                                 <div class="text">
                                     <p><?php the_content(); ?></p>
                                     <div class="text-center">
-                                        <a href="<?php the_permalink(); ?>" class="u-btn-submit">Continue Reading</a>
+                                        <a href="<?php the_permalink(); ?>" class="u-btn-submit">Learn More About <?php the_title() ?></a>
 																					<br>
 																		</div>
                                 </div>
