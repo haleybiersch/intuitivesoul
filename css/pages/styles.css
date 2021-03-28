@@ -149,8 +149,8 @@ body {
   position: relative;
 }
 
-html {
-  margin-top: 100px;
+html#html {
+  margin-top: 100px !important;
 }
 
 html, body {
