@@ -10,10 +10,61 @@
     	</div>
     </section>
 
-    <!-- End Parallax -->
-
-    <!-- Main Content -->
-
+<!-- End Parallax -->
+	
+<!-- Featured Audio-->
+<section class="main pt-5" id="main">
+	
+     <div class="container media-page pt-5">
+		<h2>Featured Show</h2>
+		<div class="row">
+		<table class="table table-responsive table-striped">
+		<tbody>
+                <tr>
+                <?php
+                    $args = array(
+                        'post_type' => 'post',
+                        'post_status' => 'publish',
+						'category_name' => 'archives',
+                        'posts_per_page' => 1,
+	              );
+					
+             $arr_posts = new WP_Query( $args );
+                if ( $arr_posts->have_posts() ) :
+                while ( $arr_posts->have_posts() ) :
+                    $arr_posts->the_post();
+                    ?>
+			<tr>
+                        <td class="show"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></td>
+                        <td><?php 
+                            if ( get_post_meta($post->ID, 'enclosure', true) ) {
+                                $thefile = get_post_meta($post->ID, 'enclosure', true);
+                                $thefile = str_replace("\n", '', $thefile); // remove new lines
+                                $thefile = str_replace("0audio/mpeg", '', $thefile); // remove extra characters
+                                echo '<audio controls="controls">
+                                <source src="' . $thefile . '" />
+                                <p>Your browser does not support the audio element. Here is a <a href="' . $thefile . '">link to the audio</a> 	instead.</p>
+                                        </audio>'; 
+                            }
+                        ?>
+                        </td>             
+			</tr>                    
+                    <?php
+                endwhile;
+	        endif;
+        	    ?>
+	  	</tbody>
+		</table>
+            <?php
+            if (function_exists("cq_pagination")) {
+                cq_pagination($arr_posts->max_num_pages);
+            }?>
+	</div>
+	</div>
+	</section>
+	
+    
+<!-- Main Content -->
     <section class="blog pb-5">
     	<h2>FEATURED BLOGS</h2>
     	<div class="container">
