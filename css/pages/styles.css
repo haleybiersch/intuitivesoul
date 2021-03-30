@@ -66,6 +66,14 @@
   width: 120px;
 }
 
+main {
+  min-height: calc(100vh - 70px);
+}
+
+footer {
+  height: 260px;
+}
+
 .btn-primary {
   background-color: #DA8954;
   border-color: #DA8954;

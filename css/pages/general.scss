@@ -1,4 +1,12 @@
 @use 'variables';
+main {
+  min-height: calc(100vh - 70px);
+}
+footer {
+  height: 260px;
+
+}
+
 .btn-primary {
   background-color: variables.$button;
   border-color: variables.$button;
