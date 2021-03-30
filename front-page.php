@@ -18,7 +18,7 @@
 <section class="main pt-5" id="main">
 	
      <div class="container media-page pt-5">
-		<h2>Featured Show</h2>
+		<h2>FEATURED SHOW</h2>
 		<div class="row">
 		<table class="table table-responsive table-striped">
 		<tbody>
