@@ -170,6 +170,11 @@ html, body {
   overflow-x: hidden;
 }
 
+a {
+  color: #DA8954;
+  text-decoration: none;
+}
+
 header {
   position: fixed;
   top: 0;

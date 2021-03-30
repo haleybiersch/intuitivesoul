@@ -12,7 +12,10 @@ html, body {
  width: 100%;
   overflow-x: hidden;
 }
-
+a {
+  color: variables.$orange;
+  text-decoration: none;
+}
 header {
   position: fixed;
   top: 0;
