@@ -392,7 +392,7 @@ footer > form {
     stroke: none;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 1.125rem;
+    font-size: 1rem;
     background-color: var(--theme-c2);
     color: var(--nav-primary);
 }
