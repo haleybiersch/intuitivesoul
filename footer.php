@@ -5,7 +5,11 @@
       <div class="row">
         <div class="col-sm-3 px-4 py-4 text-center">
           <p class="pfooter">If you enjoyed, were touched, and/or inspired by a show, please show your appreciation by donating a small token.</p>
-          <a href="https://www.paypal.com/donate/?token=oX1R3YOVF1bZA64F4yN019BVinw1uGvjFbsZel4fKxVwTtU0np46ZySwT3Ya7CM3QGFxTW&country.x=CA&locale.x=CA" class="pfooter u-btn-submit" target="_blank">DONATE</a>
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick" />
+                <input type="hidden" name="hosted_button_id" value="6795494" />
+                <input type="submit" alt="PayPal - The safer, easier way to pay online!" name="submit" value="Donate Now" class="u-btn-submit" />
+              </form>    
         </div>
         <div class="col-sm-6 px-8 py-8">
           <p class="u-text-1">Intuitive Soul</p>
