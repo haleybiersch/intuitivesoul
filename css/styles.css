@@ -474,3 +474,25 @@ audio::-webkit-media-controls-time-remaining-display {
   display: none;
 }
 */
+@media only screen and (max-width: 991.98px) {
+    .skrollable {
+        background-image: url("../img/lotus-flower-2-md.jpg");
+        min-height: 571px;
+
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .skrollable {
+        background-image: url("../img/lotus-flower-2-sm.jpg");
+        min-height: 300px;
+
+    }
+
+    .skrollable-text {
+        margin: 0 auto;
+        position: relative;
+        bottom: 120px;
+
+    }
+}
