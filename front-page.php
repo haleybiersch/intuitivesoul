@@ -55,10 +55,6 @@
         	    ?>
 	  	</tbody>
 		</table>
-            <?php
-            if (function_exists("cq_pagination")) {
-                cq_pagination($arr_posts->max_num_pages);
-            }?>
 	</div>
 	</div>
 	</section>
