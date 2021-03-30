@@ -40,6 +40,7 @@ FRONT-PAGE.PHP
 - added content renderer
 - removed sample modal
 - corrected nested tags
+- added featured show
 
 ARCHIVE.PHP
 - removed page-level styling
