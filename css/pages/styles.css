@@ -228,17 +228,28 @@ header nav ul.navigation > .menu-item-has-children > a::after {
 header nav .menu-item-has-children {
   position: relative;
   display: inline-block;
+  cursor: pointer;
+}
+header nav .menu-item-has-children > a {
+  pointer-events: none;
+  cursor: pointer;
 }
 header nav .menu-item-has-children ul {
   background-color: white;
   position: absolute;
   right: 0;
-  min-width: 160px;
+  min-width: 170px;
   z-index: 1;
   padding: 4px;
 }
 header nav .menu-item-has-children ul li {
   display: block;
+  padding: 0.25em;
+}
+header nav .menu-item-has-children ul li a {
+  display: block;
+  width: 100%;
+  padding: 0.25em;
 }
 header nav .nav-button {
   display: none;
@@ -286,6 +297,7 @@ header nav .nav-button div {
     background-color: black;
     text-align: center;
     padding-top: 100px;
+    overflow: scroll;
   }
   header nav .navigation li {
     padding: 1em 0;

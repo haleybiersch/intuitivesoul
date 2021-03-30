@@ -1,4 +1,5 @@
 // By Charlotte
+@use 'variables';
 body {
   position: relative;
 
@@ -64,6 +65,7 @@ header {
 
   .sub-menu {
     display: none;
+
   }
     .drop {
     display: block;
@@ -77,19 +79,32 @@ header {
     .menu-item-has-children {
       position: relative;
       display: inline-block;
+      cursor: pointer;
 
+
+    >a {
+      pointer-events: none;
+      cursor: pointer;
+    }
 
 
       ul {
         background-color: white;
         position: absolute;
         right: 0;
-        min-width: 160px;
+        min-width: 170px;
         z-index: 1;
         padding: 4px;
 
         li {
           display: block;
+          padding: 0.25em;
+
+          a {
+            display: block;
+            width: 100%;
+            padding: 0.25em;
+          }
         }
 
       }
@@ -149,6 +164,7 @@ header {
         background-color: black;
         text-align: center;
         padding-top: 100px;
+        overflow: scroll;
 
 
         li {
