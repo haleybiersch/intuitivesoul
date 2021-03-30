@@ -1,5 +1,7 @@
 <?php @include('header.php'); ?>
+</div>
 <main>
+
 
     <!-- Parallax image scroller. The image is specified in the class -->
     <section class="skrollable hero">
@@ -11,7 +13,7 @@
     </section>
 
 <!-- End Parallax -->
-	
+	<div class="container">
 <!-- Featured Audio-->
 <section class="main pt-5" id="main">
 	
