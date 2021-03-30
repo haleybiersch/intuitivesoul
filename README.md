@@ -20,3 +20,6 @@ PAGE-MEDIA.PHP --> RENAMED to PAGE-SHOWS.PHP
 - removed blogtalk content.  Changed col size on iheart and bmajor to col-3.  Changed size of images. (LD)
 - added item to table header
 - changed table class striped and added styling for table to style.css
+
+PAGE-PAYPAL.PHP --> PayPal button links
+- use this document to add specific "Add to Cart" options for the list of services
