@@ -501,5 +501,12 @@ audio::-webkit-media-controls-time-remaining-display {
         bottom: 120px;
 
     }
+    .u-form-group {
+        margin-right: 0;
+        width: 80%;
+    }
+    .u-form-submit {
+        font-size: 0.75rem;
+    }
 
 }
