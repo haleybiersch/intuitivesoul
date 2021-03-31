@@ -32,7 +32,7 @@
                                 <div>
                                     <h3 class="card-title"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3><hr>
                                     <p><?php the_excerpt(); ?></p>
-                                    <div class="text-center"><a href="<?php the_permalink(); ?>" class="u-btn-submit">Continue Reading</a></div>
+                                    <div class="text-center"><a href="<?php the_permalink(); ?>" class="u-btn-submit">Continue Reading <span class="d-none"><?php the_title() ?></span></a></div>
                                 </div>
                             </div>
                         </div>
@@ -61,7 +61,7 @@
                             <div class="text">
                                 <h3 class="card-title"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3><hr>
                                 <p><?php the_excerpt(); ?></p>
-                                <div class="text-center"><a href="<?php the_permalink(); ?>" class="u-btn-submit">Continue Reading</a></div>
+                                <div class="text-center"><a href="<?php the_permalink(); ?>" class="u-btn-submit">Continue Reading <span class="d-none"><?php the_title() ?></span></a></div>
                             </div>
                         </div>
                         </div>
