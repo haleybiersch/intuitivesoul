@@ -13,11 +13,9 @@
                 <?php while ($test->have_posts()) : $test->the_post(); ?>
                     <div class="col-md-8">
                                 <div class="text">
+																	<h2><?php the_title();?></h2>
                                     <p><?php the_content(); ?></p>
-                                    <div class="text-center">
-                                        <a href="<?php the_permalink(); ?>" class="u-btn-submit">Learn More About <?php the_title() ?></a>
-																					<br>
-																		</div>
+
                                 </div>
                     </div>
                     <div class="col-md-4">
