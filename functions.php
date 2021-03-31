@@ -110,6 +110,12 @@ $services = new WP_Query(array(
     'posts_per_page' => '6',
 ));
 
+$test = new WP_Query(array(
+    'category_name' => 'testimonials',
+    'post_status' => 'publish',
+    'posts_per_page' => '6',
+));
+
 //  Custom pagination function
 
 function cq_pagination($pages = '', $range = 2)
