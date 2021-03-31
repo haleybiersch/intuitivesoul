@@ -483,6 +483,12 @@ audio::-webkit-media-controls-time-remaining-display {
 }
 
 @media only screen and (max-width: 575.98px) {
+    .icon-bar {
+        left: 85% !important;
+    }
+    .icon-bar a {
+        font-size: 24px;
+    }
     .skrollable {
         background-image: url("../img/lotus-flower-2-sm.jpg");
         min-height: 300px;
@@ -495,4 +501,5 @@ audio::-webkit-media-controls-time-remaining-display {
         bottom: 120px;
 
     }
+
 }
