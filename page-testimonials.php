@@ -26,9 +26,6 @@
                 </div>
                 <?php endwhile; ?>
                 <?php wp_reset_postdata(); ?>
-								<?php 	if (function_exists("cq_pagination")) {
-												cq_pagination($all_posts->max_num_pages);
-										} ?>
             <?php else : ?>
                 <p><?php __('No News'); ?></p>
             <?php endif; ?>
