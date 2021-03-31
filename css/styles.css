@@ -510,3 +510,12 @@ audio::-webkit-media-controls-time-remaining-display {
     }
 
 }
+
+/* purchase services table */
+.purchase tr td {
+	font-size: 18px;
+}
+
+input.purchase {
+	font-size: 0.7rem;
+}
