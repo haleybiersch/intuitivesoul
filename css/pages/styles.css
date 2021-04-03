@@ -82,6 +82,13 @@ footer {
   height: auto;
 }
 
+li {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+}
+
 .btn-primary {
   background-color: #DA8954;
   border-color: #DA8954;
@@ -195,10 +202,6 @@ html, body {
 a {
   color: #DA8954;
   text-decoration: none;
-}
-
-li {
-  font-size: 1rem;
 }
 
 header {
