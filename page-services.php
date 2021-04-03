@@ -1,6 +1,4 @@
 <?php get_header();?>
-
-
 <main>
    <!-- Main Content -->
    <section class="main pt-5" id="main">
@@ -36,5 +34,6 @@
             <?php endif; ?>
         </div>
 				<br>
+       <?php include('sidebar.php') ?>
 </main>
 <?php get_footer();?>
