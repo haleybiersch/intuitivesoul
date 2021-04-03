@@ -185,6 +185,14 @@ skrollable-text {
   footer {
     height: 445px;
   }
+
+  .table {
+    padding: 4px;
+  }
+
+  .show a {
+    font-size: 16px !important;
+  }
 }
 body {
   position: relative;
