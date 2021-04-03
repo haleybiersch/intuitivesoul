@@ -150,7 +150,7 @@ main p { 1.2em;
 /* paralax effect */
 .skrollable {
   /*background-image: url("img/lotus-flower-2.jpg");*/
-  background-image: url("../img/lotus-flower-2.jpg");
+  background-image: url("../img/lotus-flower.png");
   min-height: 700px;
   background-attachment: fixed;
   background-size: cover;
