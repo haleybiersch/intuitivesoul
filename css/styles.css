@@ -1,5 +1,5 @@
 /* Created By J.Krogman, March 13, 2021 */
-/* Updated March 22, 2021 - Removed all old styles used by slide-down nav */
+/* Updated April 2, 2021 */
 
 /* default color scheme - override BS colors */
 :root {
@@ -150,7 +150,7 @@ main p { 1.2em;
 /* paralax effect */
 .skrollable {
   /*background-image: url("img/lotus-flower-2.jpg");*/
-  background-image: url("../img/lotus-flower.png");
+  background-image: url("../img/lotus-flower-2.jpg");
   min-height: 700px;
   background-attachment: fixed;
   background-size: cover;
@@ -373,29 +373,29 @@ footer > form {
     margin-right: 0;
 }
 
-.u-btn-submit, a.u-btn-submit {
-    pointer-events: initial;
-    cursor: pointer;
-    text-decoration: none;
-    border: 2px solid var(--nav-alternate);
-    outline-width: 0;
-    align-self: flex-start;
-    border-radius: 38px;
-    line-height: 1.4;
-    letter-spacing: 1px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    position: relative;
-    stroke: none;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 1rem;
-    background-color: var(--theme-c2);
-    color: var(--nav-primary);
+.u-btn-submit, a.u-btn-submit, button.u-btn-submit {
+    pointer-events: initial!important;
+    cursor: pointer!important;
+    text-decoration: none!important;
+    border: 2px solid var(--nav-alternate)!important;
+    outline-width: 0!important;
+    align-self: flex-start!important;
+    border-radius: 38px!important;
+    line-height: 1.4!important;
+    letter-spacing: 1px!important;
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+    padding-left: 30px!important;
+    padding-right: 30px!important;
+    margin-top: 1px!important;
+    margin-bottom: 1px!important;
+    position: relative!important;
+    stroke: none!important;
+    font-weight: 700!important;
+    text-transform: uppercase!important;
+    font-size: 1rem!important;
+    background-color: var(--theme-c2)!important;
+    color: var(--nav-primary)!important;
 }
 
 a.u-btn-submit:hover {
