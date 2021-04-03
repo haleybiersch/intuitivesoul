@@ -3,7 +3,13 @@ main {
   min-height: calc(100vh - 70px);
 }
 footer {
-  height: 260px;
+  height: 330px;
+
+  small {
+    position: absolute;
+    bottom: 12px;
+    left:0;
+  }
 
 }
 
@@ -103,14 +109,16 @@ skrollable-text {
 .page-link {
   font-size: 16px;
 }
+
+
 @media only screen and (max-width: 1199.98px) {
   footer {
-    height: 342px;
+    height: 375px;
   }
 }
 @media only screen and (max-width: 767.98px) {
   footer {
-    height: 452px;
+    height: 505px;
 
   }
 }
@@ -127,7 +135,7 @@ skrollable-text {
   }
 
   footer {
-    height: 445px;
+    height: 530px;
 
   }
   .table {
