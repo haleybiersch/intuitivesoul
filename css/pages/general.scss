@@ -7,6 +7,14 @@ footer {
 
 }
 
+.featured-img {
+  margin-bottom: 1em;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .btn-primary {
   background-color: variables.$button;
   border-color: variables.$button;

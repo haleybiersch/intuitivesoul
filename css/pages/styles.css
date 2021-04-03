@@ -74,6 +74,14 @@ footer {
   height: 260px;
 }
 
+.featured-img {
+  margin-bottom: 1em;
+}
+.featured-img img {
+  width: 100%;
+  height: auto;
+}
+
 .btn-primary {
   background-color: #DA8954;
   border-color: #DA8954;
