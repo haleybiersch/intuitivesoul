@@ -4,6 +4,7 @@ body {
   position: relative;
 
 }
+
 html#html {
   margin-top: 100px !important;
 }
@@ -31,6 +32,19 @@ header {
       height: auto;
     }
 }
+
+  // scrollbar
+  .navigation::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .navigation::-webkit-scrollbar-track {
+    background: black;
+  }
+
+  .navigation::-webkit-scrollbar-thumb {
+    background: #535353;
+  }
   nav {
     height: 50px;
     padding-top: 0.25em;
@@ -167,7 +181,11 @@ header {
         background-color: black;
         text-align: center;
         padding-top: 100px;
-        overflow: scroll;
+        overflow-y: scroll;
+        overflow-x:hidden;
+
+
+
 
 
         li {

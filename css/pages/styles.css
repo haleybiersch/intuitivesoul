@@ -226,6 +226,15 @@ header .logo img {
   width: 120px;
   height: auto;
 }
+header .navigation::-webkit-scrollbar {
+  width: 8px;
+}
+header .navigation::-webkit-scrollbar-track {
+  background: black;
+}
+header .navigation::-webkit-scrollbar-thumb {
+  background: #535353;
+}
 header nav {
   height: 50px;
   padding-top: 0.25em;
@@ -339,7 +348,8 @@ header nav .nav-button div {
     background-color: black;
     text-align: center;
     padding-top: 100px;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
   header nav .navigation li {
     padding: 1em 0;
