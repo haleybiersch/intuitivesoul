@@ -46,6 +46,11 @@
   </div>
 </footer>
 
-
+<div class="modal">
+    <div class="modal-content">
+        <i class="close-modal fas fa-times"><span class="d-none">Close Form</span></i>
+        <p>Form Goes Here</p>
+    </div>
+</div>
 </body>
 </html>

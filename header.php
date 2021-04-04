@@ -13,16 +13,14 @@
 </head>
 
 <body <?php body_class();?>>
-
 	<a href="<?php get_template_directory_uri(); ?>#main" class="skip-to-content-link">Skip to content</a>
 	<header>
-
 		<div class="container">
             <div class="search">
             <?php get_search_form(); ?>
         </div>
 			<nav>
-					<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/lotus-flower.png" alt="Intuitive Soul Logo" ></a>
+                <a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/lotus-flower.png" alt="Intuitive Soul Logo" ></a>
 				<div class="nav-button">
 					<p class="d-none">Mobile Nav Button</p>
 					<div class="line1"></div>
