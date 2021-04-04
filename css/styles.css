@@ -482,6 +482,12 @@ audio::-webkit-media-controls-time-remaining-display {
     }
 }
 
+@media only screen and (max-width: 769px) {
+    .icon-bar {
+        left: 88% !important;
+    }
+}
+
 @media only screen and (max-width: 575.98px) {
     .icon-bar {
         left: 85% !important;
