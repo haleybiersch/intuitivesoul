@@ -488,7 +488,11 @@ audio::-webkit-media-controls-time-remaining-display {
     }
 }
 
+<<<<<<< HEAD
     @media only screen and (max-width: 575.98px) {
+=======
+@media only screen and (max-width: 575.98px) {
+>>>>>>> 0208445006181baa3692aa500259faea19d1d965
     .icon-bar {
         left: 85% !important;
     }
