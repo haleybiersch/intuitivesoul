@@ -91,18 +91,15 @@ backToTop();
 
 // Popup
 function showModal() {
-    if(localStorage.getItem('popState') != 'shown') {
+
     setTimeout(function(){
         const modal = document.querySelector('.modal');
         const closeModal = document.querySelector('.close-modal');
         modal.style.display = "block";
         closeModal.addEventListener('click', () => {modal.style.display = "none";});
-
-
-
+        
     }, 3000);
-       localStorage.setItem('popState','shown');
-    }
+
 }
 
 showModal();
