@@ -101,7 +101,7 @@ function showModal() {
 
 
     }, 3000);
-        localStorage.setItem('popState','shown');
+       localStorage.setItem('popState','shown');
     }
 }
 
@@ -112,3 +112,4 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+

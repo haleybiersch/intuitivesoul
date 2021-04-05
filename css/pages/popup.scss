@@ -1,3 +1,4 @@
+@use 'variables';
 .modal {
   display: none;
   position: fixed;
@@ -14,6 +15,7 @@
   .modal-content {
     position: relative;
     background-color:white;
+    color: black;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -50,6 +52,39 @@
 
     }
 
+    img {
+      margin: 0 auto;
+      width: 200px;
+      height: auto;
+    }
+
+    #mc_embed_signup_scroll {
+      h2 {
+        color: black;
+        font-size: 24px;
+        text-align: center;
+        font-weight: normal;
+      }
+    }
+
+    #mc_embed_signup {
+      margin: 0 auto;
+      max-width: 450px;
+      background-color: white;
+      color: black;
+
+    }
+    #mc_embed_signup input.button {
+      height: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: variables.$orange;
+    }
+
+    #mce-EMAIL {
+      margin: 1em auto;
+
+    }
   }
   @media only screen and (max-width: 991.98px) {
     .modal-content {
@@ -57,6 +92,9 @@
     }
   }
   @media only screen and (max-width: 767.98px) {
+    .modal {
+      padding-top: 50px;
+    }
     .modal-content {
       width: 90%;
     }
