@@ -72,17 +72,26 @@
       max-width: 450px;
       background-color: white;
       color: black;
+      text-align: left;
 
     }
+
+
     #mc_embed_signup input.button {
       height: 40px;
       margin-left: auto;
       margin-right: auto;
       background-color: variables.$orange;
+      color: white;
+      outline:none;
+      border: none;
+      width: 150px;
+      margin-bottom: 1em;
     }
-
     #mce-EMAIL {
       margin: 1em auto;
+      display: block;
+      width: 100%;
 
     }
   }

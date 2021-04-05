@@ -660,15 +660,23 @@ body.search {
   max-width: 450px;
   background-color: white;
   color: black;
+  text-align: left;
 }
 .modal .modal-content #mc_embed_signup input.button {
   height: 40px;
   margin-left: auto;
   margin-right: auto;
   background-color: #DA8954;
+  color: white;
+  outline: none;
+  border: none;
+  width: 150px;
+  margin-bottom: 1em;
 }
 .modal .modal-content #mce-EMAIL {
   margin: 1em auto;
+  display: block;
+  width: 100%;
 }
 @media only screen and (max-width: 991.98px) {
   .modal .modal-content {
