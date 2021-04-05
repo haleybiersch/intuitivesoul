@@ -9,7 +9,6 @@
 	<meta name="generator" content="Eclipse IDE, PHP module">
     <?php wp_head(); // include CSS and includes ?>
     <title>Intuitive Soul</title>
-<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/39bcdfdbb8f7793099c55f10d/84c2dc6452047802abaa74432.js");</script>
 </head>
 
 <body <?php body_class();?>>
