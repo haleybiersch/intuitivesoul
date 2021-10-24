@@ -38,17 +38,9 @@
                     ?>
 			<tr>
                         <td class="show"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></td>
-                        <td><?php 
-                            if ( get_post_meta($post->ID, 'enclosure', true) ) {
-                                $thefile = get_post_meta($post->ID, 'enclosure', true);
-                                $thefile = str_replace("\n", '', $thefile); // remove new lines
-                                $thefile = str_replace("0audio/mpeg", '', $thefile); // remove extra characters
-                                echo '<audio controls="controls">
-                                <source src="' . $thefile . '" />
-                                <p>Your browser does not support the audio element. Here is a <a href="' . $thefile . '">link to the audio</a> 	instead.</p>
-                                        </audio>'; 
-                            }
-                        ?>
+                        <td>                        <audio controls><source src="<?php the_field('audio_file') ?>" type="audio/mpeg">
+                            Your browser does not support the audio tag. Podcast can be accessed by the following link: <?php the_field('audio_file'); ?>
+                        </audio>
                         </td>             
 			</tr>                    
                     <?php
